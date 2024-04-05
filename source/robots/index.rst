@@ -13,5 +13,5 @@ This is a simple project to demonstrate the use of the `Robot` class in Java. Th
     UAVs/index
     Humanoids/index
     Mobile Robots/index
-    Dogs/index
+    Quadrupeds/index
 

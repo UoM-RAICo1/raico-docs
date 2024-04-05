@@ -12,16 +12,16 @@ The content of this documentation is divided into the following sections:
   - Safety and Security
   - Miscellaneous
 - Robots
-  - Arms
+  - Manipulator Robots
     - Kuka
     - Kinova
     - ...
   - AUVs
-    - 1
+    - Mallard
     - 2
     - ...
   - UAVs
-    - Mallard
+    - 1
     - 2
     - ...
   - Humanoids
