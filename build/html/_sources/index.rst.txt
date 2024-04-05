@@ -1,20 +1,30 @@
-.. Raico1_Documentation documentation master file, created by
-   sphinx-quickstart on Wed Apr  3 13:57:38 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _Raico1: https://hotrobotics.co.uk/facilities/university-of-manchester-2/
+.. _Raico1 github: https://github.com/UoM-RAICo1
+.. _University of Manchester: https://www.manchester.ac.uk/
 
-Welcome to Raico1_Documentation's documentation!
-================================================
+
+Welcome to the RAICo1 user documentation
+=============================================
+
+.. _about:
+
+==================
+ About RAICo1
+==================
+
+Robot developers and study designers can use the following pages containing the documentation for preparing their studies and demos for visitors using the resources of `Raico1`_ at the `University of Manchester`_.
+
+.. note:: Please read ... before starting any activity inside the house.
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
+   raico1/index
 
+   infrastructure/index
 
-Indices and tables
-==================
+   robots/index
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   demos/index
