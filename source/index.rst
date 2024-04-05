@@ -18,13 +18,10 @@ Robot developers and study designers can use the following pages containing the 
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents
 
    raico1/index
-
-   infrastructure/index
-
+   Infrastructure/index
    robots/index
-
    demos/index
