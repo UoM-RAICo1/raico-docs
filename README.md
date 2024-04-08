@@ -1,5 +1,9 @@
 # RAICo1 Documentation
 
+This documentation is intended to provide information on the robots, infrastructure, and software used in the RAICo1 lab at the University of Manchester.
+
+This project written in [restructuredText](https://docutils.sourceforge.io/rst.html) and generated with [sphinx](https://www.sphinx-doc.org/en/master/index.html).
+
 To use this repo first clone it to your local machine.
 
 ```bash
