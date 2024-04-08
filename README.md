@@ -69,7 +69,7 @@ Finally, create a pull request on GitHub to merge the changes into the `main` br
 
 The documentation is structured as follows:
 
-```
+```bash
 RAICo1 Documentation
 ├─ Introduction
 │  ├─ Overview
@@ -81,40 +81,40 @@ RAICo1 Documentation
 │  ├─ ARMs
 │  │  ├─ KuKA LBR iiwa
 │  │  ├─ Kinova Gen3
-│  |  ├─ Alpha 5
-│  |  ├─ Unitree Z1
-│  |  ├─ ...
+│  │  ├─ Alpha 5
+│  │  ├─ Unitree Z1
+│  │  ├─ ...
 │  ├─ UAVs
 │  │  ├─ ...
 │  ├─ UGVs
 │  │  ├─ ...
-|  ├─ Humanoids
+│  ├─ Humanoids
 │  │  ├─ Unitree H1
 │  │  ├─ Pepper
-│  |  ├─ ...
-|  ├─ Quadrupeds
+│  │  ├─ ...
+│  ├─ Quadrupeds
 │  │  ├─ Unitree A1
 │  │  ├─ Unitree Go1
-│  |  ├─ ...
-|  ├─ Mobile Robots
+│  │  ├─ ...
+│  ├─ Mobile Robots
 │  │  ├─ AgileX Scout Mini
 │  │  ├─ AgileX Scout 2
-│  |  ├─ AgileX Tracer
-│  |  ├─ Husarion ROSbot 2 PRO
-│  |  ├─ Vega/Lyra
-│  |  ├─ ...
+│  │  ├─ AgileX Tracer
+│  │  ├─ Husarion ROSbot 2 PRO
+│  │  ├─ Vega/Lyra
+│  │  ├─ ...
 ├─ Infrastructure
 │  ├─ Sensors
 │  │  ├─ Cameras
-│  │  | ├─ RGB
-|  |  | | ├─ ...
-│  │  | ├─ RGBD
-|  |  | | ├─ ...
-│  │  | ├─ Depth
-|  |  | | ├─ Vacons
+│  │  │ ├─ RGB
+│  │  │ │ ├─ ...
+│  │  │ ├─ RGBD
+│  │  │ │ ├─ ...
+│  │  │ ├─ Depth
+│  │  │ │ ├─ Vacons
 │  │  ├─ LiDARs
-│  │  | ├─ Oster
-│  │  | ├─ Velodyne
+│  │  │ ├─ Oster
+│  │  │ ├─ Velodyne
 │  │  ├─ ...
 │  ├─ Actuators
 │  │  ├─ Motors

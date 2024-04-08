@@ -21,4 +21,4 @@ To access the RAICo1, you need to read the `General office RA`_ document and fin
 Safety and Security
 -------------------
 .. note::
-    The RAICo1 is a very sensitive equipment and should be handled with care. Consider all the safety and security information provided in the building and entrance doors.
+    The RAICo1 has a lot of sensitive equipments and should be handled with care. Consider all the safety and security information provided in the building and entrance doors.
