@@ -103,9 +103,9 @@ RAICo1 Documentation
 │  ├─ Sensors
 │  │  ├─ Cameras
 │  │  | ├─ RGB
-|  |  | | ├─ 
+|  |  | | ├─ ...
 │  │  | ├─ RGBD
-|  |  | | ├─ 
+|  |  | | ├─ ...
 │  │  | ├─ Depth
 |  |  | | ├─ Vacons
 │  │  ├─ LiDARs
