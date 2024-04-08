@@ -35,7 +35,7 @@ open index.html
 
 ## Making changes
 
-First create a new branch to make changes to the documentation.
+First create a new branch to make changes to the documentation. The branch name can be your name which will be used to identify the changes you made.
 
 ```bash
 git checkout -b <branch-name>
