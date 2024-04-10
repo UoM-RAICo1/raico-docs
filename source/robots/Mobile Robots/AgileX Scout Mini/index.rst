@@ -1,5 +1,42 @@
+.. _User documentation: https://agilexrobotics.gitbook.io/scout-mini-lite-and-pro/3-development-guide
+.. _AgileX: https://global.agilex.ai/
+
+
+=================
 AgileX Scout Mini
 =================
 
-test
 
+.. _fig_agilex_scout_mini:
+
+.. figure:: /images/agilex_scout_mini/scout_mini.png
+   :align: right
+   :scale: 12%
+   :alt: AgileX Scout Mini
+
+   AgileX Scout Mini
+
++------------------+---------------------------+
+| Location         | Mobile Arena              |
++------------------+---------------------------+
+| Contacts         | Mohammad                  |
++------------------+---------------------------+
+| Manufacturer     | `AgileX`_                 |
++------------------+---------------------------+
+| Further info     | `User documentation`_     |
++------------------+---------------------------+
+| Issues           |                           |
++------------------+---------------------------+
+
+
+On these pages you will find information about the AgileX Scout Mini robot platform.
+The documentation is divided into several sections: Powering on, Powering off, Charging, Manual driving, and ROS connection.
+
+
+.. .. toctree::
+
+..   powering_on
+..   powering_off
+..   charging
+..   manual_driving
+..   ros_connection
