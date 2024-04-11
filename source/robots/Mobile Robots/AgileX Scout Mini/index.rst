@@ -36,8 +36,8 @@ The documentation is divided into several sections: Powering on, Powering off, C
 
  .. toctree::
 
-   startup
-   manual_driving
-   charging
-   powering_off
-   ros
+    startup
+    manual_driving
+    charging
+    shutdown
+    ros
