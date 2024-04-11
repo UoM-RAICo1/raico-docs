@@ -2,7 +2,7 @@
 
 
 ==============
-Manual Driving
+Manual Control
 ==============
 
 To control the :ref:`AgileX Scout Mini` manually, you can use the controller.

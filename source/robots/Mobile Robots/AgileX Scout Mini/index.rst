@@ -31,13 +31,13 @@ AgileX Scout Mini
 
 
 On these pages you will find information about the AgileX Scout Mini robot platform.
-The documentation is divided into several sections: Powering on, Powering off, Charging, Manual driving, and ROS connection.
+The documentation is divided into several sections: Startup, Manual Control, Charging, Shutdown, and ROS connection.
 
 
  .. toctree::
 
     startup
-    manual_driving
+    manual_control
     charging
     shutdown
     ros

@@ -63,6 +63,33 @@ You can see the charger in the following figures.
 
     Scout Mini Charger Port
 
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+To connect the charger to the robot, check the following figure.
+
+.. _fig-agilex_scout_mini_charger_port:
+
+.. figure:: /images/agilex_scout_mini/scout_mini_ports.png
+    :align: center
+    :scale: 60%
+    :alt: Scout Mini Charger
+
+    Scout Mini Charging Port
+
 
 
 
