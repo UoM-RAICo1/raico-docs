@@ -38,6 +38,6 @@ The documentation is divided into several sections: Powering on, Powering off, C
 
    startup
    manual_driving
-   powering_off
    charging
+   powering_off
    ros
