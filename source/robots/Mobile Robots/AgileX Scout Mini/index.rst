@@ -39,5 +39,5 @@ The documentation is divided into several sections: Startup, Manual Control, Cha
     startup
     manual_control
     charging
-    shutdown
     ros
+    shutdown
