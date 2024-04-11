@@ -1,6 +1,7 @@
 .. _User documentation: https://agilexrobotics.gitbook.io/scout-mini-lite-and-pro/3-development-guide
 .. _AgileX: https://global.agilex.ai/
 
+.. _AgileX Scout Mini:
 
 =================
 AgileX Scout Mini
@@ -33,10 +34,10 @@ On these pages you will find information about the AgileX Scout Mini robot platf
 The documentation is divided into several sections: Powering on, Powering off, Charging, Manual driving, and ROS connection.
 
 
-.. .. toctree::
+ .. toctree::
 
-..   powering_on
-..   powering_off
-..   charging
-..   manual_driving
-..   ros_connection
+   startup
+   manual_driving
+   powering_off
+   charging
+   ros
