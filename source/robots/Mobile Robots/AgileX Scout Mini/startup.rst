@@ -1,5 +1,5 @@
 
-.. _start_up:
+.. _start_up_scout_mini:
 
 ============
 Starting Up
@@ -46,6 +46,8 @@ Powering On the Remote Controller
 Before powering on the remote controller, make sure the remote controller is fully charged. Also, make sure that all
 four toggle switches are in the up position. Look at the picture :ref:`fig_scoutmini_remote_controller`.
 
+To power on the remote controller, press the both power buttons on the remote controller at the same time.
+
 .. _fig_scoutmini_remote_controller:
 
 .. figure:: /images/agilex_scout_mini/scout_mini_controler.jpg
@@ -55,4 +57,4 @@ four toggle switches are in the up position. Look at the picture :ref:`fig_scout
 
     Remote Controller
 
-Now the :ref:`AgileX Scout Mini` is ready to be used.
+Now the :ref:`AgileX Scout Mini` is ready to be used. To control the robot, refer to the :ref:`Scout Mini Manual Control` section.
