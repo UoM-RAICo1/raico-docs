@@ -1,10 +1,10 @@
+
+.. _demo:
+
 Demo
 ====
-This is a simple demo of how to use the `react-native-ble-manager` library to connect to a BLE device and read/write data to it.
 
-
-
-
+In this section, we provide a series of demos to help you to use the robots. The demos are organized into the following categories:
 
  .. toctree::
 
