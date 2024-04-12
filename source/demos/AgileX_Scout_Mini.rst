@@ -1,5 +1,5 @@
 
-.. _teleop-twist-joy: https://github.com/ros-teleop/teleop_twist_joy
+.. _Teleop Twist Joy: https://github.com/ros-teleop/teleop_twist_joy
 
 .. _AgileX_Scout_mini_Demo:
 
@@ -9,8 +9,8 @@ AgileX Scout Mini
 To get started, connect both the Nvidia Xavier and a remote laptop to the same wifi router that has a strong stable
 signal, e.g. RAICo. Avoid using the mini-router because the signal is very weak.
 
-Demo1 - Real-world Live Demo
-----------------------------
+Demo1 - Teleportation using Joystick
+-------------------------------------
 
 This demo will show how to control the robot using a joystick.
 
@@ -24,7 +24,7 @@ First, install teleop_twist_joy
         $ sudo apt-get install ros-<distro-name>-teleop-twist-joy
 
 
-You can use `teleop-twist-joy`_ for install from the source.
+You can use `Teleop Twist Joy`_ link to install from the source.
 
 Make sure an appropriate configuration file exists for DS4:
 
@@ -73,3 +73,26 @@ check the content of ROS_IP and ROS_MASTER_URI in .bashrc, then open a terminal:
         $ roslaunch scout_bringup scout_mini_robot_base.launch
 
 Now, you should be able to control the robot using the joystick.
+
+
+Demo2 - Teleportation using Keyboard
+-------------------------------------
+
+This demo will show how to control the robot using a keyboard.
+
+Do the following steps on the **Scout Mini**:
+
+Comment the content of ROS_IP and ROS_MASTER_URI in .bashrc, then open a terminal1:
+
+    .. code-block::
+
+        $ sudo ip link set can0 up type can bitrate 500000
+        $ roslaunch scout_bringup scout_mini_robot_base.launch
+
+Open a new terminal:
+
+    .. code-block::
+
+        $ roslaunch scout_bringup scout_mini_teleop_keyboard.launch
+
+Now, you should be able to control the robot using the keyboard.
