@@ -9,3 +9,4 @@ In this section, we provide a series of demos to help you to use the robots. The
  .. toctree::
 
     AgileX_Scout_Mini
+    AgileX_Scout_2

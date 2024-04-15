@@ -1,7 +1,8 @@
 
-.. _AgileX Scout 2 User documentation PDF: https://www.generationrobots.com/media/agilex/SCOUT2.0_UserManual_v2.0_EN
-.. _AgileX Scout 2 User documentation: https://agilexrobotics.gitbook.io/scout2.0
+.. _AgileX Scout 2 documentation PDF: https://www.generationrobots.com/media/agilex/SCOUT2.0_UserManual_v2.0_EN
+.. _Scout 2 User documentation: https://agilexrobotics.gitbook.io/scout2.0
 .. _AgileX: https://global.agilex.ai/
+.. _AgileX Scout GitHub: https://github.com/agilexrobotics/scout_ros
 
 .. _AgileX Scout 2:
 
@@ -26,7 +27,7 @@ AgileX Scout 2
 +------------------+--------------------------------------------+
 | Manufacturer     | `AgileX`_                                  |
 +------------------+--------------------------------------------+
-| Further info     | `AgileX Scout 2 User documentation`_       |
+| Further info     |`AgileX Scout 2 documentation PDF`_         |
 +------------------+--------------------------------------------+
 | Issues           |                                            |
 +------------------+--------------------------------------------+

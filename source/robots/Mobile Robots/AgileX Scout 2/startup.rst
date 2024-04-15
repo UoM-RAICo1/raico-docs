@@ -6,10 +6,24 @@
 Starting Up
 ============
 
-.. note:: Before starting up the :ref:`AgileX Scout 2`, make sure you have read the `Scout 2 Safety`_ information.
-
 Please follow this instruction when powering on the :ref:`AgileX Scout 2`.
 This instruction is important to ensure the :ref:`AgileX Scout 2` boots up correctly.
+
+.. note:: Before starting up the :ref:`AgileX Scout 2`, make sure you have read the `Scout 2 Safety`_ information.
+
+.. note:: You can find the box of the :ref:`AgileX Scout 2` at the bottom of the water tank. See picture below.
+
+.. figure:: /images/agilex_scout_2/scout2_flight_case.jpg
+    :align: center
+    :scale: 50%
+    :alt: Scout 2 Box
+
+    Scout 2 Box
+
+Robot Place
+-----------
+
+You can find the :ref:`AgileX Scout 2` at the `Mobile Arena`.
 
 
 Safety Precautions
@@ -17,10 +31,8 @@ Safety Precautions
 
 Before powering on the :ref:`AgileX Scout 2`,
 
-.. .. warning:: Make sure the power supply is disconnected from the :ref:`AgileX Scout Mini`.
-.. .. warning:: Make sure the :ref:`AgileX Scout Mini` is is fully charged.
-
 .. note:: Make sure the power supply is disconnected from the :ref:`AgileX Scout 2`.
+
 .. note:: Make sure the :ref:`AgileX Scout 2` is is fully charged.
 
 
