@@ -11,4 +11,6 @@ test
     AgileX Scout 2/index
     AgileX Tracer/index
     Husarion - ROSBOT 2 PRO/index
-    Vega|Lyra/index
+
+..    Husarion - ROSBOT XL
+..    Clearpath Jackal

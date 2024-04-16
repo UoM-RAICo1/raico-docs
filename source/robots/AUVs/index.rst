@@ -1,15 +1,9 @@
 AUVs
 ====
 
-test
+Underwater Robots
 
-..toctree::
-   :maxdepth: 2
 
-   introduction
-   hardware
-   software
-   simulation
-   operation
-   maintenance
-   troubleshooting
+.. BluRov
+.. Mallard
+.. Deep Tracker DIG3
