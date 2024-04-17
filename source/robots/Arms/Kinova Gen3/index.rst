@@ -3,6 +3,7 @@
 .. _Kinova Gen3 Doc: https://artifactory.kinovaapps.com/ui/api/v1/download?repoKey=generic-documentation-public&path=Documentation%252FGen3%252FTechnical%2520documentation%252FUser%2520Guide%252FEN-UG-014-Gen3-Ultra-lightweight-user-guide-r9.1.pdf
 .. _Kinova GitHub: https://github.com/Kinovarobotics
 .. _Kinova Gen3 ROS2: https://github.com/Kinovarobotics/ros2_kortex
+.. _Kinova Gen3 ROS: https://github.com/Kinovarobotics/ros_kortex
 
 .. _Kinova Gen3:
 
@@ -29,6 +30,8 @@ Kinova Gen3
 | Manufacturer     | `Kinova Robotics`_                         |
 +------------------+--------------------------------------------+
 | Further info     | `Kinova Gen3 Doc`_                         |
++------------------+--------------------------------------------+
+| ROS              | `Kinova Gen3 ROS`_                         |
 +------------------+--------------------------------------------+
 | ROS2             | `Kinova Gen3 ROS2`_                        |
 +------------------+--------------------------------------------+
