@@ -88,3 +88,14 @@ To see the powering up process, see the video below.
 
 Now the robot is ready to use. You can now use the XBox controller to control the robot and position it to the safe desired location.
 
+
+To know how to use the XBox controller to control the robot, see :numref:`fig_xbox_controller`.
+
+.. _fig_xbox_controller:
+
+.. figure:: ../../../images/kinova_gen3/kinova_gen3_xbox_controller.png
+    :scale: 25%
+    :align: center
+    :alt: XBox Controller
+
+    XBox Controller

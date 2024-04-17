@@ -30,6 +30,7 @@ In RViz, you can visualize the robot by doing the following:
 Now you can visualize the robot in RViz and Gazebo. You can also control the robot using the `MoveIt!` plugin.
 
 
+.. _ros_example:
 
 Full Control
 ------------
