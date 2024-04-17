@@ -1,5 +1,6 @@
 
 
+.. _Kinova_Gen3_pc_connection:
 
 Connect to a PC
 =================
