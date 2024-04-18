@@ -48,5 +48,6 @@ The documentation is divided in the following sections: Startup, ROS Interface, 
    pc_connection
    real_arm
    kortex_api
+   shutdown
 
 
