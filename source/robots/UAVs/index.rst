@@ -1,9 +1,15 @@
+
+
 UAVs
 ====
 
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Contents
 
-.. Yuneec Typhoon H520
-.. DJI (Pawel Desk)
-.. DJI Matrice 300 RTK
-.. COEX Drone
+    YuneecTyphoonH520/index
+    DJI/index
+    DJIMatrice300RTK/index
+    CoexDrone/index
+

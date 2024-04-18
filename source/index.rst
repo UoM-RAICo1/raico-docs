@@ -24,10 +24,10 @@ United Kingdom and on a global scale.
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents
 
    raico1/index
-   Infrastructure/index
    robots/index
+   Infrastructure/index
    demos/index

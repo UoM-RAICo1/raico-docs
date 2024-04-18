@@ -3,7 +3,10 @@ AUVs
 
 Underwater Robots
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Contents
 
-.. BluRov
-.. Mallard
-.. Deep Tracker DIG3
+    BluRov/index
+    Mallard/index
+    DeepTrackerDIG3/index

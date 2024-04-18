@@ -9,9 +9,10 @@ test
    :maxdepth: 2
    :caption: Contents
 
-   Unitree A1/index
-   Unitree Go1/index
-..   Unitree Go2/index
-..   Unitree B1/index
+   UnitreeA1/index
+   UnitreeB1/index
+   UnitreeGo1/index
+   UnitreeGo2/index
+
 
 
