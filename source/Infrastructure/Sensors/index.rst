@@ -6,7 +6,7 @@ Sensors
 test
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Contents
 
     Hokuyo2dLidar/index
@@ -30,8 +30,4 @@ test
     RealSenseD455/index
     ZED/index
 
-
-
-
-.. ZED (Stereo Camera)
 

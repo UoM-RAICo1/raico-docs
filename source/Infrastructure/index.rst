@@ -7,7 +7,7 @@ The infrastructure is the set of devices that are used to monitor the environmen
 
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Contents
 
     Sensors/index

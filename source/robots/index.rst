@@ -1,7 +1,11 @@
 Robots
 ======
 
-This is a simple project to demonstrate the use of the `Robot` class in Java. The `Robot` class is a part of the `java.awt` package and is used to generate native system input events for the purposes of test automation, self-running demos, and other applications where control of the mouse and keyboard is needed.
+In `RAICo1`, we have a variety of robots that are used for different purposes. These robots are used for research, education, and outreach.
+This section contains the documentation for the various robots that categorize the robots based on their type.
+
+Here is the list of robots that are documented in this section:
+
 
 .. toctree::
     :maxdepth: 2
