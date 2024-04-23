@@ -82,7 +82,31 @@ Before starting up the robot, please make sure that the following conditions are
 
     KUKA LBR iiwa operating instructions
 
+.. warning:: Before starting up the robot, please make sure that you are aware about the safety zones of the robot. See :numref:`kuka_iiwa_safety_zones`.
+
+.. _kuka_iiwa_safety_zones:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_safety_zone.png
+    :scale: 30%
+    :align: center
+    :alt: KUKA LBR iiwa Safety Zones
+
+    KUKA LBR iiwa Safety Zones
+
 
 Powering on
 -----------
+
+To power on the robot, please turn on the power supply of the robot controller (KUKA Sunrise Cabinet).
+The power supply is located on the back side of the robot controller. See :numref:`fig_kuka_iiwa_power_supply`.
+
+.. _fig_kuka_iiwa_power_supply:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_controller_power.jpg
+    :scale: 12%
+    :align: center
+    :alt: KUKA LBR iiwa Power Supply
+
+    KUKA LBR iiwa Power Supply
+
 
