@@ -109,4 +109,16 @@ The power supply is located on the back side of the robot controller. See :numre
 
     KUKA LBR iiwa Power Supply
 
+After turning on the power supply, the robot controller will start up. The robot controller will take some time to start up. After the robot controller is started up, the robot is ready for operation.
+During this time you will see the teach pendant go through a number of different screens including a windows startup screen before being ready to go. See :numref:`fig_kuka_iiwa_startup`.
+
+.. _fig_kuka_iiwa_startup:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_startup_screen.png
+    :scale: 100%
+    :align: center
+    :alt: KUKA LBR iiwa Startup
+
+    KUKA LBR iiwa Startup
+
 
