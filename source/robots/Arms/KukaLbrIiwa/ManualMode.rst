@@ -54,6 +54,7 @@ then whilst holding the engagement switch (DeadMans switch) press and hold the p
 
 The following example demonstrates how to control the robot in manual mode.
 
+.. note:: Some of these applications are documented on the :ref:`KUKA LBR iiwa 14 R820` page, in documentation link.
 
 Example 1: Home Position
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,3 +84,44 @@ Next, a new window appears ``Press of to finish the app``: **Do not press OK** .
 Instead of pressing OK, just interact with the robotic arm by pushing/pulling it;
 the robot will keep/hold the homing position in spite of external disturbance.
 
+.. todo::
+    Add the video of the robot moving to the impedance control position.
+
+
+Example 3: Zero Position
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The robot moves to the `zero position`. The zero position is the position where the robot places the robot arm
+in a ``straight-up position`` corresponding to zero values on all axes.
+
+        ``Applications -> Mechanical Zero Position``
+
+See the joints values on:
+
+        ``Pad > Robots > Joint Position``
+
+
+.. todo::
+    Add the video of the robot moving to the zero position.
+
+
+Example 4: Motions
+~~~~~~~~~~~~~~~~~~
+
+the robot executes some pre-defined motion including the redundancy (resembles drawing the infinite sign on a whiteboard).
+
+        ``Applications -> Motions``
+
+..  todo::
+    Add the video of the robot executing the motions.
+
+
+Example 5: SmartServoLINInteractionControl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+end effector executes up-down motion (a sine-wave) while still allowing interaction/physical-contact with user.
+
+        ``Applications -> SmartServoLINInteractionControl``
+
+.. todo::
+    Add the video of the robot executing the SmartServoLINInteractionControl.
