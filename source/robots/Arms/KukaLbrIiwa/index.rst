@@ -47,6 +47,7 @@ The document provides information on how to use the :ref:`KUKA LBR iiwa 14 R820`
 
     startup
     ManualMode
+    ProgrammingMode
 
 
 
