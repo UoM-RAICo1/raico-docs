@@ -5,6 +5,9 @@
 Starting Up
 ===========
 
+.. warning:: First of all, please make sure that you have read the :ref:`KUKA LBR iiwa 14 R820` User Manual before starting up the robot.
+
+
 Please follow the instructions below to power up the :ref:`KUKA LBR iiwa 14 R820` robot.
 This instructions are based on the :ref:`KUKA LBR iiwa 14 R820` User Manual.
 
@@ -92,6 +95,13 @@ Before starting up the robot, please make sure that the following conditions are
     :alt: KUKA LBR iiwa Safety Zones
 
     KUKA LBR iiwa Safety Zones
+
+The zones are as follows:
+    - Zone 1: Work Space.
+    - Zone 2: Manipulator.
+    - Zone 3: Stopping Distance.
+    - Zone 4: Safety Zone.
+
 
 
 Powering on
