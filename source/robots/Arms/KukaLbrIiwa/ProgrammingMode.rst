@@ -121,8 +121,9 @@ then go down and click on ``StationSetup.cat``, then select ``Configuration`` ta
 To start the robot with FRI, do the following steps:
 
     1. In :guilabel:`Laptop1-Lenovo T14s` go to Sunrise workbench, on the left window go to :guilabel:`<ProjectName> -> src -> application`, then right click on :guilabel:`application -> New -> Sunrise Application`, select one of the templates from the list, namely ``RoboticsAPI Application``, as shown on the figure :numref:`fig_kuka_sunrise_application2`. Click ``Next`` and give it a name on the next screen, say ``<your initials>_RealTime_FRI_App1``, for example `MM_RealTime_FRI_App1` for the user Murilo Marinho. Then, copy-paste the content `Code KUKA Sunrise Application`_, making sure to change the text accordingly (the name of the application, e.g. `Anthony_RealTime_FRI_App1` should match the name of the class and the object instantiation).
-
-
+    2. In :guilabel:`teaching pendant` because the application ``RealTime_FRI_App1`` has already been loaded to the Cabinet in a previous step, it can now be selected via the teaching pendant. For that, :guilabel:`select PAD -> Applications -> RealTime_FRI_App1`, which will execute ``homing`` to a particular location then wait for info from FRI client.
+    3. In :guilabel:`Laptop1-Lenovo T14s` make sure to read ``section 6.4``, Creating the FRI client application (C++), page 41`` of the manual ``kuka_FRI_PL-2303HX product brochure 011706.pdf`` (file accessible via :guilabel:`SunriseWorkbench -> Help -> Help Contents`. The file ``FastRobotInterface_Client_Source/FRI-Client-SDK_Cpp.zip`` can be found on :guilabel:`SunriseWorkbench -> PackageExplorer -> right click on FastRobotInterface_Client_Source -> select Properties -> take a look at Location`. Now, Open Win10 Explorer, then go to the Location indicated above, copy the file ``FRI-Client-SDK_Cpp.zip`` somewhere on :guilabel:`Laptop2-Lenovo P15` or alternatively on a usb stick.
+    4. In :guilabel:`Laptop2-Lenovo P15` Unzip the archive ``FRI-Client-SDK_Cpp.zip`` somewhere on the local ssd, then open the file ``build/MSVisualStudio2010/FRIClientSDK.sln`` in :program:`Visual Studio Community 2022`, e.g. by double-clicking that file. A pop-up message might appear saying `One or more projects in the solution were not loaded correctly…`. Just ``click OK``. Then, click OK in case window :numref:`fig_kuka_vs2010` appears.
 
 .. _fig_kuka_sunrise_application2:
 
@@ -282,7 +283,26 @@ To start the robot with FRI, do the following steps:
 
 .. note:: The code highly inspired from Kaiqiang knowledge transfer :guilabel:`folder -> LBR program [needs FRI] ->  RealTime_FRI_Template.java`.
 
-.. note:: The important parts of the code are the ``FRI_ClientIP`` variable, and the name of the class which should appear when we create an object inside public static ``void main()``. Click on ``Synchronize`` to deploy the application to the Cabinet.
+.. note:: The important parts of the code are the ``FRI_ClientIP`` variable, and the name of the class which should appear when we create an object inside public static ``void main()``. Click on ``Synchronize`` to deploy the application to the Cabinet (see :numref:`fig_kuka_iiwa_barpic2`).
+
+.. _fig_kuka_iiwa_barpic2:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_barpic2.png
+   :scale: 50%
+   :align: center
+   :alt: KUKA
+
+   KUKA iiwa Bar
+
+.. _fig_kuka_vs2010:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_vs2010.png
+   :scale: 50%
+   :align: center
+   :alt: KUKA
+
+   KUKA iiwa Visual Studio 2010
+
 
 
 
