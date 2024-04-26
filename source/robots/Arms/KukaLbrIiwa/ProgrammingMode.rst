@@ -13,7 +13,7 @@ Connecting to the Robot
 
 To connect the laptop to the robot, do the following steps (see :numref:`fig_kuka_network_settings`):
     1. Connect the Ethernet cable to the robot's X66 port (above the power switch) and to the laptop.
-    2. Change the network settings of the laptop so that the ipv4 settings with IP address ``172.31.1.100`` and subnet mask of ``255.255.255.0``.
+    2. Change the network settings of the laptop so that the ipv4 settings with :program:`IP address` ``172.31.1.100`` and subnet mask of ``255.255.255.0``.
     3. Launch Sunrise Workbench.
     4. Ping the Cabinet, open Command Prompt, and write ``ping 172.31.1.147``.
 
@@ -38,16 +38,17 @@ To connect the laptop to the robot, do the following steps (see :numref:`fig_kuk
    KUKA iiwa Network architecture
 
 
-Hello World without FRI (Fast Robot Interface)
-----------------------------------------------
+Hello World without FRI
+-----------------------
 
-To start the robot, do the following steps:
+
+To start the robot without FRI (Fast Robot Interface), do the following steps:
     1. In case we start from scratch (never programmed the robot before), start by creating a new folder (say on desktop) that will play the role of workspace: give it a name, say, ``SunriseWorkbench_<yourName>`` (e.g. SunriseWorkbench_AnthonyChen).
     2. Open Sunrise workbench (click the link on the Desktop). A window opens asking for the workspace folder. here indicate the folder you have created at the previous step.
     3. This step describes uploading all projects from robot controller to laptop. Follow the instructions on Kuka workshop. `KUKA iiwa basic programming_manual_woNotes.pdf`, Section 11.6, page 101.
     4. Write your first application. In Sunrise workbench, on the left window go to ``<ProjectName> -> src -> application``, then right click on ``application -> New -> Sunrise Application``, select one of the templates from the list, namely ``RoboticsAPI`` Application, as shown on the figure :numref:`fig_kuka_sunrise_application`. Click ``Next`` and give it a name on the next screen, say ‘<your initials>_HelloWorld1’, e.g. MM_HelloWorld1 for the user Murilo Marinho. Then click on the ``Finish`` button.
     5. This step describes deploying a project from laptop to robot controller. Follow the instructions on Kuka workshop, ``KUKA iiwa basic programming_manual_woNotes.pdf``, Section 11.5.2, page 100. When the Authorization windows opens, provide the password ``kuka`` (without quotes, all lowercase letters) and select ``Expert``. Alternatively, select Use group, ``Safety maintenance technician``, and the Password, ``argus`` (without quotes, all lowercase letters).
-    6. . Check that your application exists on the teach pendant and that it runs as expected. ``PAD -> Applications -> <your initials>_HelloWorld1``.
+    6. . Check that your application exists on the teach pendant and that it runs as expected. :guilabel:`PAD -> Applications -> <your initials>_HelloWorld1`.
 
 .. note:: The “Synchronize” button used to deploy the application to the Cabinet is located on the ribbon on top. See :numref:`fig_kuka_sunrise_synchronize`.
 
@@ -82,6 +83,206 @@ To start the robot, do the following steps:
     KUKA Sunrise Synchronize
 
 
+
+Hello World with FRI
+--------------------
+
+This section shows how to start programming the :ref:`KUKA LBR iiwa 14 R820` arm such that the application communicates
+in real-time (i.e. at/during runtime) with a so-called client program running on a separate laptop. Running (launching) the
+application involves using the teaching pendant.
+
+First, make sure the network configuration is looking like the one in :numref:`fig_kuka_network_architecture_fri`.
+
+.. _fig_kuka_network_architecture_fri:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_network_architecture_fri.png
+   :scale: 30%
+   :align: center
+   :alt: KUKA network architecture FRI
+
+   KUKA iiwa Network architecture FRI
+
+to check the IPs of the Cabinet, use :guilabel:`Laptop1-Lenovo T14s`, open :guilabel:`SunriseWorkbench -> Package Explorer`,
+then go down and click on ``StationSetup.cat``, then select ``Configuration`` tab. A window will appear (see :numref:`fig_kuka_sunrise_station_setup`).
+
+.. _fig_kuka_sunrise_station_setup:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_sunrise_station_setup.png
+   :scale: 50%
+   :align: center
+   :alt: KUKA Sunrise Station Setup
+
+   KUKA Sunrise Station Setup
+
+.. note:: For more information related to Networking, use the `KUKA Sunrise.OS 1.16 KUKA Sunrise.Workbench 1.16, Operating and Programming Instructions for System Integrators`
+
+.. note:: The pdf accessible on the Transcend 32GB white usb stick with ``KUKA`` marked on it, located in the transparent box under the robotic arm -> search within the document for ``StationSetup.cat``
+
+To start the robot with FRI, do the following steps:
+
+    1. In :guilabel:`Laptop1-Lenovo T14s` go to Sunrise workbench, on the left window go to :guilabel:`<ProjectName> -> src -> application`, then right click on :guilabel:`application -> New -> Sunrise Application`, select one of the templates from the list, namely ``RoboticsAPI Application``, as shown on the figure :numref:`fig_kuka_sunrise_application2`. Click ``Next`` and give it a name on the next screen, say ``<your initials>_RealTime_FRI_App1``, for example `MM_RealTime_FRI_App1` for the user Murilo Marinho. Then, copy-paste the content `Code KUKA Sunrise Application`_, making sure to change the text accordingly (the name of the application, e.g. `Anthony_RealTime_FRI_App1` should match the name of the class and the object instantiation).
+
+
+
+.. _fig_kuka_sunrise_application2:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_sunrise_application2.png
+   :scale: 50%
+   :align: center
+   :alt: KUKA Sunrise Application
+
+   KUKA Sunrise Application
+
+.. _Code KUKA Sunrise Application:
+
+.. code-block::
+
+    package application;
+
+    /*
+    Import KUKA LBR packages
+    */
+    import static com.kuka.roboticsAPI.motionModel.BasicMotions.ptp;
+
+    import com.kuka.roboticsAPI.applicationModel.RoboticsAPIApplication;
+    //import static com.kuka.roboticsAPI.motionModel.BasicMotions.*;
+
+    //import com.kuka.roboticsAPI.deviceModel.JointPosition;
+    import com.kuka.roboticsAPI.deviceModel.LBR;
+    import com.kuka.roboticsAPI.motionModel.PositionHold;
+    import com.kuka.roboticsAPI.motionModel.controlModeModel.JointImpedanceControlMode;
+    //import com.kuka.roboticsAPI.uiModel.ApplicationDialogType;
+
+    //import com.kuka.roboticsAPI.geometricModel.CartDOF;
+    //import com.kuka.roboticsAPI.motionModel.IMotionContainer;
+    //import com.kuka.roboticsAPI.motionModel.PTP;
+    //import com.kuka.roboticsAPI.motionModel.PositionHold;
+    //import com.kuka.roboticsAPI.motionModel.controlModeModel.CartesianImpedanceControlMode;
+    //import com.kuka.roboticsAPI.uiModel.ApplicationDialogType;
+    import com.kuka.roboticsAPI.controllerModel.Controller;
+
+    /*
+    Import KUK FRI package
+    */
+    import java.util.concurrent.TimeUnit;
+    import java.util.concurrent.TimeoutException;
+
+    import com.kuka.connectivity.fastRobotInterface.FRIChannelInformation;
+    import com.kuka.connectivity.fastRobotInterface.FRIConfiguration;
+    import com.kuka.connectivity.fastRobotInterface.FRIJointOverlay;
+    import com.kuka.connectivity.fastRobotInterface.FRISession;
+    //import com.kuka.connectivity.fri.example.LBRJointSineOverlay;
+
+
+    public class RealTime_FRI_RobotApp1 extends RoboticsAPIApplication {
+        //Define a LBR object
+            private LBR lbr_7_800;
+            private Controller lbr_7_800_Ctrl;
+            private String FRI_ClientIP;
+
+        @Override
+        public void initialize() {
+            // initialize your application here
+                    //lbr_7_800 = getContext().getDeviceFromType(LBR.class);
+
+                    //*********
+                    //Define the lbr object and lbr controller object
+                    //*************/
+                    lbr_7_800_Ctrl = (Controller) getContext().getControllers().toArray()[0];
+                    lbr_7_800 = (LBR) lbr_7_800_Ctrl.getDevices().toArray()[0];
+                    // **********************************************************************
+                    // *** change next line to the FRIClient's IP address                 ***
+                    // **********************************************************************
+                    FRI_ClientIP = "192.170.10.12";
+        }
+
+        @Override
+        public void run() throws Exception {
+            //Initilise the control mode
+            JointImpedanceControlMode ctrMode = new JointImpedanceControlMode(200, 200, 200, 200, 200, 200, 200);
+            ctrMode.setDampingForAllJoints(0.5);
+            //configure the robot to position hold mode
+            PositionHold posHold = new PositionHold(ctrMode, -1, TimeUnit.SECONDS);
+            //lbr_7_800.getController().getExecutionService().cancelAll();
+            lbr_7_800.move(ptp(0,Math.toRadians(30),0,-Math.toRadians(90),0,-Math.toRadians(30),0).setJointVelocityRel(0.3));
+            //lbr_7_800.move(ptp(Math.toRadians(40),Math.toRadians(40),Math.toRadians(40),Math.toRadians(40),Math.toRadians(40),Math.toRadians(40),Math.toRadians(40)).setJointVelocityRel(0.3));
+            // configure and start FRI session
+            FRIConfiguration friConfiguration = FRIConfiguration.createRemoteConfiguration(lbr_7_800, FRI_ClientIP);
+            friConfiguration.setReceiveMultiplier(1);
+            friConfiguration.setSendPeriodMilliSec(1);//Important: This number should be smaller than 10 for joint-position based control
+
+            getLogger().info("Creating FRI connection to " + friConfiguration.getHostName());
+            getLogger().info("SendPeriod: " + friConfiguration.getSendPeriodMilliSec() + "ms |"
+                    + " ReceiveMultiplier: " + friConfiguration.getReceiveMultiplier());
+
+            FRISession friSession = new FRISession(friConfiguration);
+            FRIJointOverlay jointOverlay = new FRIJointOverlay(friSession);
+
+
+            // wait until FRI session is ready to switch to command mode
+            try
+            {
+                friSession.await(10, TimeUnit.SECONDS);
+
+            }
+            catch (final TimeoutException e)
+            {
+                //If there is no connection, then close the FRI session
+                getLogger().error(e.getLocalizedMessage());
+                friSession.close();
+                return;
+            }
+
+            getLogger().info("FRI connection established.");
+            lbr_7_800.move(ptp(0,Math.toRadians(30),0,-Math.toRadians(90),0,-Math.toRadians(30),0).setJointVelocityRel(0.3));
+
+            // (friSession.getFRIChannelInformation().getQuality() == Conn_Qaulity)
+            boolean App_Run = false;
+            FRIChannelInformation.FRIConnectionQuality Conn_Quality = friSession.getFRIChannelInformation().getQuality();
+            if ((Conn_Quality == FRIChannelInformation.FRIConnectionQuality.EXCELLENT) ||(Conn_Quality == FRIChannelInformation.FRIConnectionQuality.GOOD))
+            {App_Run = true;}
+            try
+            {
+                while (App_Run)
+                {
+                    //JointPosition JointPos = lbr_7_800.getCurrentJointPosition();
+                    /****
+                    //This is the first working version
+                    lbr_7_800.moveAsync(ptp(.0, .0, .0, .0, .0, .0, .0).addMotionOverlay(jointOverlay));
+                    */
+                    lbr_7_800.moveAsync(posHold.addMotionOverlay(jointOverlay));
+                    Conn_Quality = friSession.getFRIChannelInformation().getQuality();
+                    if ((Conn_Quality != FRIChannelInformation.FRIConnectionQuality.EXCELLENT) && (Conn_Quality != FRIChannelInformation.FRIConnectionQuality.GOOD))
+                    {App_Run = false;}
+                    //getLogger().info(String.valueOf(friSession.getFRIChannelInformation().getJitter()));
+                    //getLogger().info(String.valueOf(friSession.getFRIChannelInformation().getLatency()));
+                }
+            }
+            catch(Exception run_err)
+            {
+                friSession.close();
+                getLogger().error(run_err.getLocalizedMessage());
+                getLogger().info(String.valueOf(friSession.getFRIChannelInformation().getLatency()));
+                return;
+            }
+
+            friSession.close();
+            getLogger().info("FRI connection ended.");
+
+            //Close the FRI session if the programme is done.
+
+        }
+
+        public static void main(final String[] args)
+        {
+            final RealTime_FRI_RobotApp1 app = new RealTime_FRI_RobotApp1();
+            app.runApplication();
+        }
+    }
+
+.. note:: The code highly inspired from Kaiqiang knowledge transfer :guilabel:`folder -> LBR program [needs FRI] ->  RealTime_FRI_Template.java`.
+
+.. note:: The important parts of the code are the ``FRI_ClientIP`` variable, and the name of the class which should appear when we create an object inside public static ``void main()``. Click on ``Synchronize`` to deploy the application to the Cabinet.
 
 
 
