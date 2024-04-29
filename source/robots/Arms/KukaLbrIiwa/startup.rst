@@ -42,11 +42,11 @@ First of all you need to know the components of the robot system. The robot syst
     KUKA LBR iiwa Components
 
 The details of the components are as follows:
-    1. Connecting cable to the smartPAD
-    2. KUKA smartPAD control panel
-    3. Manipulator
-    4. Connecting cable to KUKA Sunrise Cabinet robot controller
-    5. KUKA Sunrise Cabinet robot controller
+    #. Connecting cable to the smartPAD
+    #. KUKA smartPAD control panel
+    #. Manipulator
+    #. Connecting cable to KUKA Sunrise Cabinet robot controller
+    #. KUKA Sunrise Cabinet robot controller
 
 .. note::
 
@@ -58,9 +58,9 @@ Before Starting Up
 
 
 Before starting up the robot, please make sure that the following conditions are met:
-    - The robot is placed on a flat surface.
-    - The robot connections are properly connected.
-    - The robot is connected to a power source.
+    #. The robot is placed on a flat surface.
+    #. The robot connections are properly connected.
+    #. The robot is connected to a power source.
 
 .. warning::
 
@@ -97,10 +97,10 @@ Before starting up the robot, please make sure that the following conditions are
     KUKA LBR iiwa Safety Zones
 
 The zones are as follows:
-    - Zone 1: Work Space.
-    - Zone 2: Manipulator.
-    - Zone 3: Stopping Distance.
-    - Zone 4: Safety Zone.
+    #. Zone 1: Work Space.
+    #. Zone 2: Manipulator.
+    #. Zone 3: Stopping Distance.
+    #. Zone 4: Safety Zone.
 
 
 
