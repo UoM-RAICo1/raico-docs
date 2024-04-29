@@ -18,7 +18,7 @@ Now, follow the steps below:
 
 3. In Terminal run the following command to start the ROS driver:
 
-    .. code-block:: bash
+    .. code-block::
 
         $ roslaunch kortex_driver kortex_driver.launch
 
@@ -47,7 +47,7 @@ Now you can move the `Rviz` model.
 
 7. In the second terminal run the following command to run the vision node:
 
-    .. code-block:: bash
+    .. code-block::
 
         $ roslaunch kinova_vision kinova_vision.launch
 
@@ -55,7 +55,7 @@ Now you can use RGBD data, and a 3D point cloud from the camera.
 
 8. [Optional] Access to aligned coloured point cloud data:
 
-    .. code-block:: bash
+    .. code-block::
 
         $ roslaunch kinova_vision kinova_vision_rgbd.launch
 

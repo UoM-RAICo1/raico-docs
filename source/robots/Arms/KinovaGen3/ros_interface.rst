@@ -17,10 +17,10 @@ Gazebo Simulation
 
 To launch the Gazebo simulation, you can use the following command:
 
-.. code-block:: bash
+    .. code-block::
 
-    $ source kinova_ws/devel/setup.bash
-    $ roslaunch kortex_gazebo spawn_kortex_robot.launch
+        $ source kinova_ws/devel/setup.bash
+        $ roslaunch kortex_gazebo spawn_kortex_robot.launch
 
 In RViz, you can visualize the robot by doing the following:
     - Change the Fixed Frame from `map` to `base_link`.
@@ -37,14 +37,15 @@ Full Control
 
 To full control the robot by `ROS` you can use the following command:
 
-.. code-block:: bash
+    .. code-block::
 
-    $ source kinova_ws/devel/setup.bash
-    $ roslaunch kortex_examples full_arm_movement_python.launch
+        $ source kinova_ws/devel/setup.bash
+        $ roslaunch kortex_examples full_arm_movement_python.launch
 
 or
 
-.. code-block:: bash
+    .. code-block::
 
-    $ source kinova_ws/devel/setup.bash
-    $ roslaunch kortex_examples moveit_example.launch
+        $ source kinova_ws/devel/setup.bash
+        $ roslaunch kortex_examples moveit_example.launch
+
