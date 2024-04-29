@@ -123,7 +123,8 @@ To start the robot with FRI, do the following steps:
     1. In :guilabel:`Laptop1-Lenovo T14s` go to Sunrise workbench, on the left window go to :guilabel:`<ProjectName> -> src -> application`, then right click on :guilabel:`application -> New -> Sunrise Application`, select one of the templates from the list, namely ``RoboticsAPI Application``, as shown on the figure :numref:`fig_kuka_sunrise_application2`. Click ``Next`` and give it a name on the next screen, say ``<your initials>_RealTime_FRI_App1``, for example `MM_RealTime_FRI_App1` for the user Murilo Marinho. Then, copy-paste the content `Code KUKA Sunrise Application`_, making sure to change the text accordingly (the name of the application, e.g. `Anthony_RealTime_FRI_App1` should match the name of the class and the object instantiation).
     2. In :guilabel:`teaching pendant` because the application ``RealTime_FRI_App1`` has already been loaded to the Cabinet in a previous step, it can now be selected via the teaching pendant. For that, :guilabel:`select PAD -> Applications -> RealTime_FRI_App1`, which will execute ``homing`` to a particular location then wait for info from FRI client.
     3. In :guilabel:`Laptop1-Lenovo T14s` make sure to read ``section 6.4``, Creating the FRI client application (C++), page 41`` of the manual ``kuka_FRI_PL-2303HX product brochure 011706.pdf`` (file accessible via :guilabel:`SunriseWorkbench -> Help -> Help Contents`. The file ``FastRobotInterface_Client_Source/FRI-Client-SDK_Cpp.zip`` can be found on :guilabel:`SunriseWorkbench -> PackageExplorer -> right click on FastRobotInterface_Client_Source -> select Properties -> take a look at Location`. Now, Open Win10 Explorer, then go to the Location indicated above, copy the file ``FRI-Client-SDK_Cpp.zip`` somewhere on :guilabel:`Laptop2-Lenovo P15` or alternatively on a usb stick.
-    4. In :guilabel:`Laptop2-Lenovo P15` Unzip the archive ``FRI-Client-SDK_Cpp.zip`` somewhere on the local ssd, then open the file ``build/MSVisualStudio2010/FRIClientSDK.sln`` in :program:`Visual Studio Community 2022`, e.g. by double-clicking that file. A pop-up message might appear saying `One or more projects in the solution were not loaded correctly…`. Just ``click OK``. Then, click OK in case window :numref:`fig_kuka_vs2010` appears.
+    4. In :guilabel:`Laptop2-Lenovo P15` Unzip the archive ``FRI-Client-SDK_Cpp.zip`` somewhere on the local ssd, then open the file ``build/MSVisualStudio2010/FRIClientSDK.sln`` in :program:`Visual Studio Community 2022`, e.g. by double-clicking that file. A pop-up message might appear saying `One or more projects in the solution were not loaded correctly…`. Just ``click OK``. Then, click OK in case window appears (see :numref:`fig_kuka_vs2010`). Click the ``green Play`` button to run the program LBRJointSineOverlay (see :numref:`fig_kuka_run_program`).
+    5. To teach the pendant, run the app according to Step2. You should see the robot doing sine waves (up-down motion), as requested by the FRI Client.
 
 .. _fig_kuka_sunrise_application2:
 
@@ -146,20 +147,9 @@ To start the robot with FRI, do the following steps:
     import static com.kuka.roboticsAPI.motionModel.BasicMotions.ptp;
 
     import com.kuka.roboticsAPI.applicationModel.RoboticsAPIApplication;
-    //import static com.kuka.roboticsAPI.motionModel.BasicMotions.*;
-
-    //import com.kuka.roboticsAPI.deviceModel.JointPosition;
     import com.kuka.roboticsAPI.deviceModel.LBR;
     import com.kuka.roboticsAPI.motionModel.PositionHold;
     import com.kuka.roboticsAPI.motionModel.controlModeModel.JointImpedanceControlMode;
-    //import com.kuka.roboticsAPI.uiModel.ApplicationDialogType;
-
-    //import com.kuka.roboticsAPI.geometricModel.CartDOF;
-    //import com.kuka.roboticsAPI.motionModel.IMotionContainer;
-    //import com.kuka.roboticsAPI.motionModel.PTP;
-    //import com.kuka.roboticsAPI.motionModel.PositionHold;
-    //import com.kuka.roboticsAPI.motionModel.controlModeModel.CartesianImpedanceControlMode;
-    //import com.kuka.roboticsAPI.uiModel.ApplicationDialogType;
     import com.kuka.roboticsAPI.controllerModel.Controller;
 
     /*
@@ -172,8 +162,6 @@ To start the robot with FRI, do the following steps:
     import com.kuka.connectivity.fastRobotInterface.FRIConfiguration;
     import com.kuka.connectivity.fastRobotInterface.FRIJointOverlay;
     import com.kuka.connectivity.fastRobotInterface.FRISession;
-    //import com.kuka.connectivity.fri.example.LBRJointSineOverlay;
-
 
     public class RealTime_FRI_RobotApp1 extends RoboticsAPIApplication {
         //Define a LBR object
@@ -296,12 +284,32 @@ To start the robot with FRI, do the following steps:
 
 .. _fig_kuka_vs2010:
 
-.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_vs2010.png
-   :scale: 50%
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_vs_2010.png
+   :scale: 100%
    :align: center
    :alt: KUKA
 
    KUKA iiwa Visual Studio 2010
+
+.. _fig_kuka_run_program:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_run_program.png
+   :scale: 70%
+   :align: center
+   :alt: KUKA
+
+   KUKA iiwa Run Program
+
+.. note::  In case you can only see the first 5 lines indicated in the command window :numref:`fig_kuka_run_program`, but not the other lines of code like ``LBRiiwaClient state changed from…``, this might be because you skipped ``Step4``.
+
+.. note:: In case the command window :numref:`fig_kuka_run_program` shows a few lines of ``LBRiiwaClient state changed from …``, then the program stops unexpectedly, this might be due to the quality of the networking connection being judget too low. You might try: :guilabel:`1. Make sure [Laptop2-Lenovo P15] is powered on (to avoid any eco-mode enabled on the networking card)`; :guilabel:`2. Disable any other networking adapters on [Laptop2-Lenovo P15], like wifi`; :guilabel:`3. Change the Ethernet cable – prefer one that is shielded and short`; :guilabel:`4. Modify the C++ code above, so that it expects to receive data points at a lower frequency: replace the line below`
+
+    .. code-block::
+
+        // friConfiguration.setSendPeriodMilliSec(1);
+        friConfiguration.setSendPeriodMilliSec(5);//5ms instead of 1ms
+
+    Lastly, :guilabel:`Try changing the computer [Laptop2-Lenovo P15]  with another one.`
 
 
 
