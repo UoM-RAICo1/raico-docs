@@ -125,6 +125,8 @@ To start the robot with FRI, do the following steps:
     3. In :guilabel:`Laptop1-Lenovo T14s` make sure to read ``section 6.4``, Creating the FRI client application (C++), page 41`` of the manual ``kuka_FRI_PL-2303HX product brochure 011706.pdf`` (file accessible via :guilabel:`SunriseWorkbench -> Help -> Help Contents`. The file ``FastRobotInterface_Client_Source/FRI-Client-SDK_Cpp.zip`` can be found on :guilabel:`SunriseWorkbench -> PackageExplorer -> right click on FastRobotInterface_Client_Source -> select Properties -> take a look at Location`. Now, Open Win10 Explorer, then go to the Location indicated above, copy the file ``FRI-Client-SDK_Cpp.zip`` somewhere on :guilabel:`Laptop2-Lenovo P15` or alternatively on a usb stick.
     4. In :guilabel:`Laptop2-Lenovo P15` Unzip the archive ``FRI-Client-SDK_Cpp.zip`` somewhere on the local ssd, then open the file ``build/MSVisualStudio2010/FRIClientSDK.sln`` in :program:`Visual Studio Community 2022`, e.g. by double-clicking that file. A pop-up message might appear saying `One or more projects in the solution were not loaded correctly…`. Just ``click OK``. Then, click OK in case window appears (see :numref:`fig_kuka_vs2010`). Click the ``green Play`` button to run the program LBRJointSineOverlay (see :numref:`fig_kuka_run_program`).
     5. To teach the pendant, run the app according to Step2. You should see the robot doing sine waves (up-down motion), as requested by the FRI Client.
+    6. [Optional] In case you want to test another program from the list in Solution Explorer [the right-hand side window], :guilabel:`right click on it then select “Set as Startup Project, then click the green Play button again`. If the application ``RealTime_FRI_RobotApp1`` is active, we should see the robot arm executing an up-down [sine wave] motion.
+
 
 .. _fig_kuka_sunrise_application2:
 
@@ -313,4 +315,24 @@ To start the robot with FRI, do the following steps:
 
 
 
+Advanced development
+--------------------
 
+Users intending to push the robot to its limits (in terms of velocities, torques, etc.), first need to select ``Auto mode``
+using the physical switch on the teach pendant. This will immediately trigger a Safety error that can be seen on the
+teaching pendant. This needs to be dealt with from :guilabel:`Sunrise Workbench, the right-hand side menu, click on
+SafetyConfiguration.sconf file` and then, on the right-hand side screen, you will see the content of ``row 2``, as shown
+in the :numref:`fig_kuka_safety_configuration` . ``By deleting it``, the error will probably go away but the robot is deemed to be unsafe e.g.
+when colliding with an object. Instead, it is better to define some safety mechanisms: see the ``Safety`` chapter from
+the Integrators manual which describes what and how that can be achieved. In particular, a hardware device with a
+physical switch can be built, connected via ``X11`` to the cabinet, with 2 pairs of pins used to connect an enabling
+switch – the so-called ``velocity mode`` on the error indicated on the teaching pendant.
+
+.. _fig_kuka_safety_configuration:
+
+.. figure:: ../../../images/kuka_lbr_iiwa/kuka_iiwa_safety_configuration.png
+   :scale: 75%
+   :align: center
+   :alt: KUKA
+
+   KUKA iiwa Safety Configuration
