@@ -57,6 +57,6 @@ The document includes the following sections:
 
 .. toctree::
 
-    startup
+    calibration
     tracking
 
