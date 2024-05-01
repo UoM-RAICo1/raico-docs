@@ -1,4 +1,4 @@
-
+.. _vicon_bridge: https://github.com/ethz-asl/vicon_bridge
 
 .. _vicon_application:
 
@@ -101,6 +101,85 @@ To playback the recorded data, you can use the ``Vicon Tracker`` software. The s
     Vicon playback
 
 .. note:: To go back (and exit Playback mode), clk on ``Go Live`` again making it change to ``Go Offline``.
+
+
+.. _vicon_ros_bridge:
+
+ROS Bridge
+----------
+
+THe ROS repo presented in :ref:`Vicon vero 2.2` page. However, you can use `vicon_bridge`_ to bridge the Vicon data to ROS. The steps are as follows:
+
+    .. code-block::
+
+        $ cd ~/vicon_ws/src
+        $ git clone https://github.com/ethz-asl/vicon_bridge.git
+        $ cd ~/vicon_ws
+        $ catkin_make
+        $ source devel/setup.bash
+        $ rospack profile
+
+Now in the terminal, you can run the following command to set the Vicon IP:
+
+    .. code-block::
+
+        $ nm-connection-editor
+
+Then, :guilabel:`click on Ethernet -> click Add -> select Ethernet`, then set config as shown in the :numref:`vicon-ethernet-config`.
+
+.. _vicon-ethernet-config:
+
+.. figure:: ../../../images/vicon_vero/vicon-vero-ethernet-config.png
+    :scale: 70%
+    :align: center
+    :alt: Vicon ethernet config
+
+    Vicon ethernet config
+
+.. note:: If the connection is not stable you can change the method into ``Manual``.
+
+Now, Plug one cable into [laptop] and another one in the PoE switch, next to any of the cables going to the Vicon cameras. Then test the Network connection by running the following command:
+
+    .. code-block::
+
+        $ ping 192.168.10.1
+
+To check the IP details, run the following command:
+
+    .. code-block::
+
+        $ vi ~/vicon_ws1/src/vicon_bridge/launch/vicon.launch
+
+and make sure this line appears:
+
+    .. code-block::
+
+        <arg name="datastream_hostport" default="192.168.10.1:801"/>
+
+Now, you can run the following command to start the Vicon bridge:
+
+    .. code-block::
+
+        $ roslaunch vicon_bridge vicon.launch
+
+
+To check the data, run the following command:
+
+    .. code-block::
+
+        $ rostopic list
+        $ rostopic echo /vicon/stefan/stefan
+
+.. note:: stefan is the name of the object as selected on ``vicon-PC``, :guilabel:`Vicon Tracker -> Objects`. You can change it to the name of the object you are interested in. See the :numref:`vicon-object-name`.
+
+.. _vicon-object-name:
+
+.. figure:: ../../../images/vicon_vero/vicon-vero-object-name.png
+    :scale: 70%
+    :align: center
+    :alt: Vicon object name
+
+    Vicon object name
 
 
 
