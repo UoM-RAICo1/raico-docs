@@ -100,6 +100,224 @@ The higher this value, the more light the cameras emit.
 MT Setting Up
 ~~~~~~~~~~~~~
 
+Firstly select the ``Intensity`` mode. See :numref:`fig_qualisys_intensity` for an example.
+
+.. _fig_qualisys_intensity:
+
+.. figure:: ../../../images/qualisys_air/qualisys_intensity.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Intensity
+
+    Qualisys Air Camera Intensity
+
+The light ring on the camera turns on in green. See :numref:`fig_qualisys_green` for an example.
+
+.. _fig_qualisys_green:
+
+.. figure:: ../../../images/qualisys_air/qualisys_green.jpg
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Green
+
+    Qualisys Air Camera Green
+
+As a guideline, we are looking at ET to be from 50 to 300 microsecond, and MT to be between 20 to 60 %.
+Start with low ET and MT values and check whether the two markers are clearly identified.
+If not, try increasing ET initially and MT afterwards, then reiterate, meaning increase ET and then MT.
+Satisfactory results would look like in the images below. Two clear and separate balls had been identified.
+See :numref:`fig_qualisys_detection_markers` for an example.
+
+.. _fig_qualisys_detection_markers:
+
+.. figure:: ../../../images/qualisys_air/qualisys_detection_marker_1.png
+    :scale: 100%
+    :align: left
+    :alt: Qualisys Detection Markers
+
+    Detected Markers
+
+
+.. figure:: ../../../images/qualisys_air/qualisys_detection_marker_2.png
+    :scale: 94%
+    :align: left
+    :alt: Qualisys Detection Markers
+
+    Detected Markers
+
+|
+|
+|
+|
+|
+
+Next, set to ``Marker`` mode. See :numref:`fig_qualisys_marker_mode` for an example.
+
+.. _fig_qualisys_marker_mode:
+
+.. figure:: ../../../images/qualisys_air/qualisys_marker_mode.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Marker Mode
+
+    Qualisys Air Camera Marker Mode
+
+and zoom on the two markers. We want to be able to see them clearly and distinct like below. See :numref:`fig_qualisys_detected_black_markers` for an example.
+
+.. _fig_qualisys_detected_black_markers:
+
+.. figure:: ../../../images/qualisys_air/qualisys_detected_black_markers.png
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Detected Black Markers
+
+    Detected Black Markers
+
+Next, we need to look at artefacts.
+Although markers might be clearly identified using the settings above, this might come at the expense of artefacts,
+as seen in the :numref:`fig_qualisys_artefacts`.
+
+.. _fig_qualisys_artefacts:
+
+.. figure:: ../../../images/qualisys_air/qualisys_artefacts.png
+    :scale: 60%
+    :align: center
+    :alt: Qualisys Artefacts
+
+    Qualisys Artefacts
+
+Now, we need to revise ET and MT parameters such that there is a balance (trade-off)
+between the clarity of the identified markers and the reduction of artefacts (ideally, we want to see clear markers
+and make artefacts disappear).
+
+.. note:: Artefacts: not useful objects that get picked up by cameras, such as reflections, shadows, etc.
+
+Try switching to ``Video mode`` and see what creates those artefacts. If the source of the artefacts are physical objects
+like aluminium rods lying in the RoI, then ``physically remove/eliminate`` them by placing them somewhere else,
+away from the scene. Other examples of artefacts include water reflections from the outside light coming through
+the roof windows, which cannot be physically removed. Instead, we can try to reduce its effects by ``tuning/playing``
+with the ``ET and MT parameters``. And redo Step 3 for all tracker cameras.
+
+
+Masking the Artefacts
+~~~~~~~~~~~~~~~~~~~~~
+
+After having put all effort in eliminating or at least reducing the effects of artefacts, the leftovers need to be masked.
+First, make sure to remove any markers from RoI so that what is left over are just artefacts.
+Two options: Auto-Mask or Manual Masking.
+
+1. Auto-Mask: Select the ``Auto-Mask`` mode with clicking the Auto-Mask button at ``the right hand side of the menu``.
+See :numref:`fig_qualisys_auto_mask`.
+
+.. _fig_qualisys_auto_mask:
+
+.. figure:: ../../../images/qualisys_air/qualisys_auto_mask.png
+    :scale: 80%
+    :align: center
+    :alt: Qualisys Auto Mask
+
+    Qualisys Auto Mask
+
+2. Manual Masking: Click on the ``Marker Mask Tool`` at ``left-hand side menu``.
+Then use the mouse to draw rectangles on each camera representing the region to be masked.
+See :numref:`fig_qualisys_manual_mask`.
+
+.. _fig_qualisys_manual_mask:
+
+.. figure:: ../../../images/qualisys_air/qualisys_manual_mask.png
+    :scale: 80%
+    :align: center
+    :alt: Qualisys Manual Mask
+
+    Qualisys Manual Mask
+
+
+Define global coordinate system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To do calibration we will use the ``Calibration kit 600``. Art no 130456, Serial number 2412, consisting of an L-shape
+and a wand, shown at :numref:`fig_qualisys_calibration_kit`.
+
+.. _fig_qualisys_calibration_kit:
+
+.. figure:: ../../../images/qualisys_air/qualisys_calibration_kit.png
+    :scale: 70%
+    :align: center
+    :alt: Qualisys Calibration Kit
+
+    Qualisys Calibration Kit
+
+Place the ``L-shape`` somewhere in the Region of Interest (RoI) where you want the global coordinate system to be.
+See :numref:`fig_qualisys_l_shape`.
+
+.. _fig_qualisys_l_shape:
+
+.. figure:: ../../../images/qualisys_air/qualisys_l_shape.png
+    :scale: 70%
+    :align: center
+    :alt: Qualisys L-Shape
+
+    Qualisys L-Shape
+
+Next, take the ``T-shape 601.7 mm`` wand. Make sure to indicate the details of this kit
+(consisting of the ``T-shape wand and L-frame``) by going to :guilabel:`Project Options -> Camera System -> Calibration`.
+
+.. _fig_qualisys_project_options:
+
+.. figure:: ../../../images/qualisys_air/qualisys_project_options.png
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Project Options
+
+    Qualisys Project Options
+
+Then, Click the ``wand icon`` on the top horizontal menu. See :numref:`fig_qualisys_wand_icon`.
+
+.. _fig_qualisys_wand_icon:
+
+.. figure:: ../../../images/qualisys_air/qualisys_wand_icon.png
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Wand Icon
+
+    Qualisys Wand Icon
+
+and, on the window that pops up on the screen, choose the ``calibration time`` (e.g. 60 seconds) and
+the Delay in calibration (e.g. 5 seconds), then hit ``OK``. See :numref:`fig_qualisys_calibration_time`.
+
+.. _fig_qualisys_calibration_time:
+
+.. figure:: ../../../images/qualisys_air/qualisys_calibration_time.png
+    :scale: 60%
+    :align: center
+    :alt: Qualisys Calibration Time
+
+    Qualisys Calibration Time
+
+Take the ``T-shape 601.7 mm wand`` and start waiving it in the RoI.
+Combine the two motions below to create a waiving motion.
+
+    1. Move the wand round the tank in a ``spiral motion`` with the head of the ``T-wand vertical``.
+    2. Move the wand up-down with the head of the ``T-wand horizontal``.
+
+Try to cover as much as possible of entire RoI (not just a small region).
+Once the data has been recorded, you can view and play it again.
+
+
+Create a rigid body
+~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
