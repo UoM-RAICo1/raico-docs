@@ -1,7 +1,7 @@
 
 
 
-.. _qualisys_startup:
+.. _qualisys_air_startup:
 
 ===========
 Starting Up
