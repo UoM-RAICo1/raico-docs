@@ -297,8 +297,8 @@ the Delay in calibration (e.g. 5 seconds), then hit ``OK``. See :numref:`fig_qua
 Take the ``T-shape 601.7 mm wand`` and start waiving it in the RoI.
 Combine the two motions below to create a waiving motion.
 
-    1. Move the wand round the tank in a ``spiral motion`` with the head of the ``T-wand vertical``.
-    2. Move the wand up-down with the head of the ``T-wand horizontal``.
+    1. Move the wand round the tank in a ``spiral motion`` with the head of the ``T- wand vertical``.
+    2. Move the wand up-down with the head of the ``T- wand horizontal``.
 
 Try to cover as much as possible of entire RoI (not just a small region).
 Once the data has been recorded, you can view and play it again.
@@ -306,6 +306,80 @@ Once the data has been recorded, you can view and play it again.
 
 Create a rigid body
 ~~~~~~~~~~~~~~~~~~~
+
+For the tracking the rigid body, we need to create a non-symmetric pattern with the Air markers. See :numref:`fig_qualisys_rigid_body`.
+
+.. _fig_qualisys_rigid_body:
+
+.. figure:: ../../../images/qualisys_air/qualisys_rigid_body.jpg
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Rigid Body
+
+    Qualisys Rigid Body Example
+
+Make sure the following three windows are available on the screen, :guilabel:`hit View -> Trajectory Info -> Unidentified`. Then hit ``Labeled`` and finally hit ``Discarded``.
+See :numref:`fig_qualisys_windows`.
+
+.. _fig_qualisys_windows:
+
+.. figure:: ../../../images/qualisys_air/qualisys_windows.png
+    :scale: 100%
+    :align: center
+    :alt: Qualisys Windows
+
+    Qualisys Windows
+
+Click on the ``Record icon`` on the top horizontal menu. See :numref:`fig_qualisys_record_icon`.
+
+.. _fig_qualisys_record_icon:
+
+.. figure:: ../../../images/qualisys_air/qualisys_record_icon.png
+    :scale: 80%
+    :align: center
+    :alt: Qualisys Record Icon
+
+    Qualisys Record Icon
+
+and start capturing a short video that contains the pattern. See :numref:`fig_qualisys_capture_video`.
+
+.. _fig_qualisys_capture_video:
+
+.. figure:: ../../../images/qualisys_air/qualisys_capture_video.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Capture Video
+
+    Qualisys Capture Video
+
+Replay the recording and pause somewhere (hit spacebar). Markers’ data will show up in the box ``Unidentified trajectories``.
+Click on each marker that forms the pattern, then drag and drop them into the ``Labeled trajectories``.
+Give individual markers and associated trajectories names, e.g. marker1, marker2, etc.
+Select all markers that form a pattern. Use :guilabel:`Shift + select, or Ctrl + click on each marker ball, right-click with the mouse -> Define rigid body (6DOF) -> Average of frames`.
+See :numref:`fig_qualisys_rigid_body_creation`.
+
+.. _fig_qualisys_rigid_body_creation:
+
+.. figure:: ../../../images/qualisys_air/qualisys_rigid_body_creation.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Rigid Body Creation
+
+    Qualisys Rigid Body Creation
+
+Then give it a name, as shown in :numref:`fig_qualisys_rigid_body_name`.
+
+.. _fig_qualisys_rigid_body_name:
+
+.. figure:: ../../../images/qualisys_air/qualisys_rigid_body_name.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Rigid Body Name
+
+    Qualisys Rigid Body Name
+
+.. note:: Make sure the name does NOT have any spaces, and does not start with a number, otherwise it would fail to work on ROS.
+
 
 
 
