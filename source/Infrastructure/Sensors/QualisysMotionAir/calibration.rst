@@ -231,6 +231,7 @@ See :numref:`fig_qualisys_manual_mask`.
 
     Qualisys Manual Mask
 
+.. _Qualisys Air Rigid Body:
 
 Define global coordinate system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -305,7 +306,7 @@ Once the data has been recorded, you can view and play it again.
 
 
 Create a rigid body
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 For the tracking the rigid body, we need to create a non-symmetric pattern with the Air markers. See :numref:`fig_qualisys_rigid_body`.
 
@@ -464,6 +465,14 @@ See :numref:`fig_qualisys_new_icon`.
     :alt: Qualisys New Icon
 
     Qualisys New Icon
+
+Continuously stream offline recorded data
+------------------------------------------
+
+Open a project which has recorded data in it.
+You should be able to see such files in the left-hand side menu of QTM.
+Select :guilabel:`Play -> Play with real-time output`.
+
 
 
 
