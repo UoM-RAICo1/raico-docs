@@ -380,8 +380,90 @@ Then give it a name, as shown in :numref:`fig_qualisys_rigid_body_name`.
 
 .. note:: Make sure the name does NOT have any spaces, and does not start with a number, otherwise it would fail to work on ROS.
 
+.. note:: In tutorial below, we shall work with a different rigid body called ``Mallard_pattern1`` instead of ``rigid_body1``.
 
+Next, we need to adjust the body coordinate system, i.e. the ``xyz-coordinate axes``.
+For that, click on the ``settings button`` from the horizontal top menu. See :numref:`fig_qualisys_settings_button`.
 
+.. _fig_qualisys_settings_button:
+
+.. figure:: ../../../images/qualisys_air/qualisys_settings_button.png
+    :scale: 90%
+    :align: center
+    :alt: Qualisys Settings Button
+
+    Qualisys Settings Button
+
+and go to :guilabel:`Processing > 6DOF Tracking`. See :numref:`fig_qualisys_6dof_tracking`.
+
+.. _fig_qualisys_6dof_tracking:
+
+.. figure:: ../../../images/qualisys_air/qualisys_6dof_tracking.png
+    :scale: 40%
+    :align: center
+    :alt: Qualisys 6DOF Tracking
+
+    Qualisys 6DOF Tracking
+
+Then, click on ``Translate`` button and adjust accordingly. See :numref:`fig_qualisys_translate_button`.
+
+.. _fig_qualisys_translate_button:
+
+.. figure:: ../../../images/qualisys_air/qualisys_translate_button.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Translate Button
+
+    Qualisys Translate Button
+
+You can also click on ``Rotate``. For example, below we set up the ``y-axis`` going through points 1 and 3. See :numref:`fig_qualisys_rotate_button`.
+
+.. _fig_qualisys_rotate_button:
+
+.. figure:: ../../../images/qualisys_air/qualisys_rotate_button.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys Rotate Button
+
+    Qualisys Rotate Button
+
+To know which point has what number, click on a point and look at the number shown in the upper right corner of the white window.
+For example, below the point 2 was clicked on. See :numref:`fig_qualisys_point_number`.
+
+.. _fig_qualisys_point_number:
+
+.. figure:: ../../../images/qualisys_air/qualisys_point_number.png
+    :scale: 60%
+    :align: center
+    :alt: Qualisys Point Number
+
+    Qualisys Point Number
+
+To check the list of all rigid bodies stored in QTM, go to :guilabel:`Project Options -> Processing -> 6DOF Tracking`.
+See :numref:`fig_qualisys_rigid_bodies`.
+
+.. _fig_qualisys_rigid_bodies:
+
+.. figure:: ../../../images/qualisys_air/qualisys_rigid_bodies.png
+    :scale: 90%
+    :align: center
+    :alt: Qualisys Rigid Bodies
+
+    Qualisys Rigid Bodies
+
+Close the active window inside QTM (hit the second X from top to down, on the upper right corner of the screenshot above)
+and when the dialog box appears, select ``Yes, save settings``. Click the ``New`` icon to start streaming
+(broadcasting) data of the rigid bodies defined above, across the network (the Netgear switch).
+See :numref:`fig_qualisys_new_icon`.
+
+.. _fig_qualisys_new_icon:
+
+.. figure:: ../../../images/qualisys_air/qualisys_new_icon.png
+    :scale: 50%
+    :align: center
+    :alt: Qualisys New Icon
+
+    Qualisys New Icon
 
 
 
