@@ -248,3 +248,174 @@ Try to cover as much as possible of entire RoI (not just a small region).
 Once the data has been recorded, you can view and play it again.
 
 
+Creat a Rigid Body
+------------------
+
+First of all we need a non-symmetric patter made with markers. See :numref:`fig_uw_rigid_body`.
+
+.. _fig_uw_rigid_body:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body.png
+    :scale: 100%
+    :align: center
+    :alt: qualisys_uw_rigid_body
+
+    Rigid Body
+
+Make sure the following three windows are available on the screen. :guilabel:`hit View -> Trajectory Info -> Unidentified`, then hit ``Labeled`` and finally hit Discarded. See :numref:`fig_uw_rigid_body_windows`.
+
+.. _fig_uw_rigid_body_windows:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_windows.png
+    :scale: 90%
+    :align: center
+    :alt: qualisys_uw_rigid_body_windows
+
+    Rigid Body Windows
+
+Click th ``Record`` button. See :numref:`fig_uw_rigid_body_record`.
+
+.. _fig_uw_rigid_body_record:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_record.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_record
+
+    Rigid Body Record
+
+Start capturing a short video that contains the pattern. See :numref:`fig_uw_rigid_body_capture`.
+
+.. _fig_uw_rigid_body_capture:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_capture.png
+    :scale: 50%
+    :align: center
+    :alt: qualisys_uw_rigid_body_capture
+
+    Rigid Body Capture
+
+Replay the recording and pause somewhere (hit spacebar).
+Markers’ data will show up in the box ``Unidentified trajectories``.
+Click on each marker that forms the pattern, then ``drag and drop`` them into the ``Labeled trajectories``.
+Give individual markers and associated trajectories names, e.g. marker1, marker2, etc.
+Select ``all markers`` that form a pattern using :guilabel:`Shift + select, or Ctrl + click on each marker ball`.
+Now, :guilabel:`right-click with the mouse -> Define rigid body (6DOF) -> Average of frames`. See :numref:`fig_uw_rigid_body_define`.
+
+.. _fig_uw_rigid_body_define:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_define.png
+    :scale: 50%
+    :align: center
+    :alt: qualisys_uw_rigid_body_define
+
+    Rigid Body Define
+
+Then, give it  a name, e.g. ``Rigid Body 1``. See :numref:`fig_uw_rigid_body_name`.
+
+.. _fig_uw_rigid_body_name:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_name.png
+    :scale: 50%
+    :align: center
+    :alt: qualisys_uw_rigid_body_name
+
+    Rigid Body Name
+
+.. note:: Make sure the name does NOT have any spaces, and does not start with a number, otherwise it would fail to work on ROS.
+
+Next, we need to adjust the body coordinate system, i.e. the xyz-coordinate axes.
+For that, click on the `settings button` from the `horizontal top menu`.
+See :numref:`fig_uw_rigid_body_settings`.
+
+.. _fig_uw_rigid_body_settings:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_settings.png
+    :scale: 90%
+    :align: center
+    :alt: qualisys_uw_rigid_body_settings
+
+    Rigid Body Settings
+
+And go to :guilabel:`Processing -> 6DOF Tracking`. See :numref:`fig_uw_rigid_body_6dof`.
+
+.. _fig_uw_rigid_body_6dof:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_6dof.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_6dof
+
+    Rigid Body 6DOF
+
+Then, click on ``Translate`` button and adjust accordingly. See :numref:`fig_uw_rigid_body_translate`.
+
+.. _fig_uw_rigid_body_translate:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_translate.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_translate
+
+    Rigid Body Translate
+
+You can also click on ``Rotate``. For example, below we set up the y-axis going through points 1 and 3. See :numref:`fig_uw_rigid_body_rotate`.
+
+.. _fig_uw_rigid_body_rotate:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_rotate.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_rotate
+
+    Rigid Body Rotate
+
+To know which point has what number, click on a `point` and look at the number shown in the upper right corner of the
+white window. For example, below the point 2 was clicked on. See :numref:`fig_uw_rigid_body_point`.
+
+.. _fig_uw_rigid_body_point:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_point.png
+    :scale: 60%
+    :align: center
+    :alt: qualisys_uw_rigid_body_point
+
+    Rigid Body Point
+
+To check the list of all rigid bodies stored in QTM, go to :guilabel:`Project Options -> Processing -> 6DOF Tracking`.
+See :numref:`fig_uw_rigid_body_list`.
+
+.. _fig_uw_rigid_body_list:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_list.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_list
+
+    Rigid Body List
+
+For instance, below is shown the `frame` rigid body. See :numref:`fig_uw_rigid_body_frame`.
+
+.. _fig_uw_rigid_body_frame:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_frame.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_frame
+
+    Rigid Body Frame
+
+Close the active window inside `QTM`  with clicking the second X from top to down, on the upper right corner of the screenshot above
+and when the dialog box appears, select ``Yes, save settings``.
+Click the ``New`` icon to start streaming (broadcasting) data of the rigid bodies defined above,
+across the network (the Netgear switch). See :numref:`fig_uw_rigid_body_stream`.
+
+.. _fig_uw_rigid_body_stream:
+
+.. figure:: ../../../images/qualisys_uw/qualisys_uw_rigid_body_stream.png
+    :scale: 70%
+    :align: center
+    :alt: qualisys_uw_rigid_body_stream
+
+    Rigid Body Stream
+
