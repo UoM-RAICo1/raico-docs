@@ -248,6 +248,8 @@ Try to cover as much as possible of entire RoI (not just a small region).
 Once the data has been recorded, you can view and play it again.
 
 
+.. _Qualisys Underwater Rigid Body:
+
 Creat a Rigid Body
 ------------------
 
