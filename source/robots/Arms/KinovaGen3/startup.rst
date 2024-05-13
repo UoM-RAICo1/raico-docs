@@ -5,8 +5,8 @@
 
 .. _Kinova Gen3 Starting Up:
 
-Starting Up
-===========
+Kinova Starting Up
+==================
 
 Please follow this instructions when you want to use :ref:`Kinova Gen3`. This instruction is important to
 to ensure that the robot is properly initialized and ready to use in the safest way possible.

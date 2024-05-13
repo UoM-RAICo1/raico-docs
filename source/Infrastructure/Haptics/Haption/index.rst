@@ -41,4 +41,6 @@ In this document, we will go through the steps to setup and use the Haption Virt
 .. toctree::
 
     startup
+    calibration
+    demo
 
