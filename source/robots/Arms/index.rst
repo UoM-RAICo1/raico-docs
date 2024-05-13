@@ -9,9 +9,10 @@ Kinova Robotics' JACO2 robotic arm ROS package.
     :maxdepth: 2
     :caption: Contents
 
-    ReachAlpha5/index
     KinovaGen3/index
     KukaLbrIiwa/index
-    UnitreeZ1/index
     UniversalRoboticsUr3/index
+    ReachAlpha5/index
+    UnitreeZ1/index
+
 

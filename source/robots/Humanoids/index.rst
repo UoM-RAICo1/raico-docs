@@ -8,4 +8,3 @@ Humanoids is a simple library for creating and managing humanoid characters in U
     :caption: Contents:
 
     Unitree H1/index
-    Peper/index
