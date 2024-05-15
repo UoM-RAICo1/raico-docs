@@ -19,7 +19,6 @@ For external charging, disconnect the pigtail that connects the charger to the p
 Note the battery safety in below:
     - Do not store or use the pack at temperatures above +60 °C or below -19 °C.
     - Avoid puncturing or disassembling the pack.
-    - Dispose of the pack at your local hazardous waste authority.
-    - When traveling with Jackal, check your airline's regulations on lithium batteries. If allowed, carry the pack in your hand luggage to maintain it under normal cabin conditions.
+
 
 

@@ -44,5 +44,6 @@ This document provides usage instructions for the robot and how to use it with R
 
         startup
         charging
+        manual
 
 
