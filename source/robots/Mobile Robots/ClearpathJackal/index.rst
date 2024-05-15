@@ -43,5 +43,6 @@ This document provides usage instructions for the robot and how to use it with R
     .. toctree::
 
         startup
+        charging
 
 

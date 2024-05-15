@@ -23,10 +23,37 @@ The HMI is shown in the :numref:`jackal_hmi` figure.
 
 The HMI has the following components from left to right:
 
-    #. **Motion Stop button**: LED is solid green when Jackal is able to drive and flashing green when the Jackal's motors are disengaged; pressing button toggles the motors between engaged and disengaged mode.
-    #. **Comms indictor**: LED is solid green when communication between the MCU and computer has been established and LED is off otherwise.
-    #. **Wi-Fi indicator**: LED is solid green when Wi-Fi is connected and LED is off otherwise.
-    #. **Battery indicator**: LED is solid green when the battery level is ok, solid yellow when the battery level is getting low (should be charged soon), and solid red when the battery level is critical (should be charged immediately).
-    #. **System Power button**: LED is solid blue when the system is powered on and running and the LED is flashing blue during the shutdown process; when the system is powered off, pressing the power button begins the power on process; when the system is powered on, a quick press of the power button begins a graceful shutdown and a prolonged press of the power button triggers and immediate power off of the system.
+    #. **Motion Stop button**: The LED displays a solid green when the Jackal is operational and shifts to flashing green when the motors are disengaged. Pressing the button toggles the motor function between engaged and disengaged.
+    #. **Comms indictor**: The LED remains solid green to indicate a successful connection between the MCU and the computer. It is unlit when no communication is established.
+    #. **Wi-Fi indicator**: A solid green LED signifies an active Wi-Fi connection. The LED is unlit when the connection is absent.
+    #. **Battery indicator**: The LED shows solid green when the battery is adequately charged, transitions to solid yellow indicating a low charge that requires imminent recharging, and turns solid red to signal a critical battery level necessitating immediate charging.
+    #. **System Power button**: The LED is solid blue when the system is powered on and operational. It flashes blue during the shutdown process. Pressing the power button when the system is off initiates the power-on sequence. A quick press while the system is on starts a graceful shutdown, whereas a prolonged press forces an immediate system power-off.
+
+
+Powering on
+-----------
+
+Activate the system by pressing the ``power button`` located on the Jackal's HMI panel.
+Observe the LEDs as they display a test pattern.
+Following this, allow approximately 30 seconds for the internal computer to complete its booting process.
+Once the booting is complete, the Comms indicator will illuminate green,
+signifying that ROS has been successfully initiated on the computer and communication with the Jackal base has been established.
+
+
+Safety Precautions
+------------------
+
+The ``Motion Stop button`` is situated on the HMI Panel at the rear of the Jackal unit.
+To activate Stop Mode, depress the Motion Stop button once; observe the flashing green LED adjacent to the Motion Stop button,
+along with the flashing red LEDs at all four corners.
+To deactivate Stop Mode, press the Motion Stop button once more; all LEDs should revert to their standard settings.
+
+
+
+Powering Off
+------------
+
+Upon completing your tasks with the Jackal, please press and release the ``power button`` to turn off the device.
+
 
 
