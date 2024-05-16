@@ -1,6 +1,6 @@
 
 .. _Husarion: https://store.husarion.com/
-.. _Rosbot2 PRO Documentation: https://husarion.com/tutorials/howtostart/rosbot2r-quick-start/
+.. _Rosbot2 PRO Documentation: https://husarion.com/manuals/rosbot/
 .. _Husarion GitHub: https://github.com/husarion/
 .. _Rosbot2 PRO ROS2: https://github.com/husarion/rosbot_ros
 
@@ -38,7 +38,7 @@ Husarion ROSBOT 2 PRO
 rapid development and versatility. It features LIDAR, an RGB-D camera, an IMU, encoders, and distance sensors.
 This affordable platform serves as a base for custom service robots, inspection robots, and swarm robotics.
 
-This document provides usage instructions for the robot and how to use it with ROS.
+This document provides usage instructions for the robot and how to use it with ROS2.
 
     .. toctree::
 
