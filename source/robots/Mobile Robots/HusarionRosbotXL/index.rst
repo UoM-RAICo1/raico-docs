@@ -1,5 +1,5 @@
 .. _Husarion: https://store.husarion.com/
-.. _Rosbot XL Documentation: https://husarion.com/tutorials/howtostart/rosbotxl-quick-start/
+.. _Rosbot XL Documentation: https://husarion.com/manuals/rosbot-xl/overview/
 .. _Husarion GitHub: https://github.com/husarion/
 .. _Rosbot XL ROS: https://github.com/husarion/rosbot-xl-autonomy
 .. _Rosbot XL ROS2: https://github.com/husarion/rosbot_xl_ros
