@@ -7,7 +7,7 @@
 .. _Husarion Rosbot 2 Pro:
 
 =======================
-Husarion ROSBOT 2 PRO
+Husarion Rosbot 2 PRO
 =======================
 
 .. _fig_husarion_rosbot_2_pro:
