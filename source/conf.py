@@ -4,7 +4,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 
-project = 'Raico1 Documentation'
+project = 'RAICo1 Documentation'
 copyright = '2024, Mohammad Hossein Bamorovat Abadi'
 author = 'Mohammad Hossein Bamorovat Abadi'
 release = '1.0.0'
@@ -20,7 +20,7 @@ exclude_patterns = []
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+# version = '1.0'
 
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'

@@ -3,7 +3,7 @@
 .. _the University of Manchester: https://www.manchester.ac.uk/
 
 
-Welcome to the RAICo1 user documentation
+Welcome to the RAICo1 User Documentation
 =============================================
 
 .. _about:
