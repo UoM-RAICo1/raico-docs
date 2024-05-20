@@ -51,5 +51,6 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         b1_start
+        b1_manual_control
 
 
