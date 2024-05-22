@@ -5,7 +5,8 @@
 Manual Control
 ==============
 
-To control the :ref:`Unitree_B1` robot manually, first of all you ned to turn the robot and remote control on. To know how to turn the robot and remote control on, please refer to the :ref:`b1_StartUp` section.
+To control the :ref:`Unitree_B1` robot manually, first of all you ned to turn the robot and remote control on.
+To know how to turn the robot and remote control on, please refer to the :ref:`b1_StartUp` section.
 
 The B1 robot can be controlled in the following ways:
 
@@ -13,7 +14,7 @@ The B1 robot can be controlled in the following ways:
 2) When the walking mode is stationary, press :guilabel:`SELECT -> to enter a static standing state`, at which point you can control the position through the joystick.
 3) In static standing state, press :guilabel:`START -> into walking mode`.
 4) In ordinary walking state, press :guilabel:`L2+START -> to switch obstacle mode`. At this point, the joystick can be pushed to control the robot to walk over obstacles and climb stairs, and if the joystick is not pushed, it will stop moving. Crossing the obstacle walking mode by pressing :guilabel:`L2+START can switch back to the normal walking mode`.
-5) In any state, press :guilabel:`L2+A-> to lock the robot` and press :guilabel:`START to unlock the robot`.
+5) In any state, press :guilabel:`L2+A -> to lock the robot` and press :guilabel:`START to unlock the robot`.
 6) After the robot locks, press :guilabel:`L2+A The robot is in a lying state`. :guilabel:`press L2+A 2 times, and the robot completes locking - lying down`
 7) Press :guilabel:`L2+A to stand up in the lying state`, currently the robot is in a locked state, press :guilabel:`START to unlock the robot`. (That is, press :guilabel:`L2+A 3 times, and the robot completes the locking-lying down-standing in turn`.
 8) In any state, :guilabel:`L2+B-> damping state/low-power state`, in which the robot will lie down and need to press :guilabel:`L2+A to make him stand up`.
@@ -22,14 +23,49 @@ The B1 robot can be controlled in the following ways:
 Remote Control Commands
 -----------------------
 
-+----------------------------------------+-----------------------------------------+
-|               Key                      |                Effect                   |
-+---------------+------------------------+-----------------------------------------+
-| Left Rocker   | Push Forward/Backward  | Move back and forth/prone Position      |
-|               +------------------------+-----------------------------------------+
-|               | Push Left/Right        | Sideways Movement/Twist                 |
-+---------------+------------------------+-----------------------------------------+
-| Right Rocker  | Push Forward/Backward  | Head Up or Down/Pitch                   |
-|               +------------------------+-----------------------------------------+
-|               | Push Left/Right        | Left or Right Turn/Shake Head           |
-+---------------+------------------------+-----------------------------------------+
+.. table:: Remote Control Commands (aligned)
+    :align: center
+
+    +----------------------------------------+------------------------------------------------+
+    |               Key                      |                Effect                          |
+    +---------------+------------------------+------------------------------------------------+
+    | Left Rocker   | Push Forward/Backward  | Move back and forth/prone Position             |
+    |               +------------------------+------------------------------------------------+
+    |               | Push Left/Right        | Sideways Movement/Twist                        |
+    +---------------+------------------------+------------------------------------------------+
+    | Right Rocker  | Push Forward/Backward  | Head Up or Down/Pitch                          |
+    |               +------------------------+------------------------------------------------+
+    |               | Push Left/Right        | Left or Right Turn/Shake Head                  |
+    +---------------+------------------------+------------------------------------------------+
+    | START                                  | Walking Mode                                   |
+    +----------------------------------------+------------------------------------------------+
+    | SELECT                                 | Static Standby Mode                            |
+    +----------------------------------------+------------------------------------------------+
+    |                                  Position Switch                                        |
+    +----------------------------------------+------------------------------------------------+
+    | L2+A                                   | Lock the joints and get in to a prone position |
+    |                                        +------------------------------------------------+
+    |                                        | Return to the standing position (Locked joints)|
+    +----------------------------------------+------------------------------------------------+
+    | L2+B                                   | Damping state                                  |
+    +----------------------------------------+------------------------------------------------+
+    | L2+START                               | Walking mode (Mode 2)                          |
+    |                                        +------------------------------------------------+
+    |                                        | Obstacle-crossing Walking Mode (Mode 3)        |
+    +----------------------------------------+------------------------------------------------+
+    |                               Three Movement States                                     |
+    +----------------------------------------+------------------------------------------------+
+    | Mode 1: Static Standby Mode            | Normal standing, push the rocker to body twist |
+    +----------------------------------------+------------------------------------------------+
+    | Mode 2: Ordinary Walking Mode          | Push the joystick to move                      |
+    +----------------------------------------+------------------------------------------------+
+    | Mode 3: Obstacle Walking Mode          | The obstacle can be moved by joystick          |
+    +----------------------------------------+------------------------------------------------+
+    | - Mode 1, Press START to enter Mode 2, Mode 2/3 press SELECT to enter Mode 1            |
+    | - Mode 2, in static state, press L2+START to switch to Mode 3                           |
+    | - Mode 3, in stop state, press L2+START to enter Mode 1                                 |
+    +-----------------------------------------------------------------------------------------+
+
+.. note:: To have more information about the remote control, please read the documentation of the robot in :ref:`Unitree_B1`.
+
+
