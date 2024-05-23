@@ -15,7 +15,7 @@ Unitree Go2
 
 .. figure:: ../../../images/unitree_go2/go2_2.png
    :align: right
-   :scale: 8%
+   :scale: 7%
    :alt: Unitree Go2
 
    Unitree Go2
@@ -45,9 +45,11 @@ The robot is capable of walking, running, and performing various other tasks.
 
 This document provides an overview of the robot's hardware, software, and operation.
 
-..    .. toctree::
+    .. toctree::
 
-..        b1_start
+        go2_start
+
+
 ..        b1_manual_control
 ..        b1_power_off
 ..        b1_ros

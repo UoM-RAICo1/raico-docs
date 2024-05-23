@@ -66,7 +66,7 @@ Put the Bl on the flat ground and install the battery pack into the battery slot
 Body Placement
 --------------
 
-Horizontal type startup: please make sure that the robot dog is placed on a flat ground before startup and operation.
+**Horizontal type startup:** please make sure that the robot dog is placed on a flat ground before startup and operation.
 The belly support pad of the robot dog should be flat against the ground.
 The machine body should lie on the ground horizontally without tilting.
 The legs of the robot dog should be fully retracted as shown in :numref:`b1_body_placement`.
