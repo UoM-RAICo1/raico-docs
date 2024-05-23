@@ -48,6 +48,7 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         go2_start
+        go2_power_off
 
 
 ..        b1_manual_control

@@ -68,3 +68,34 @@ Body Placement
 
    Go2 Horizontal Start-up
 
+
+Start Up
+--------
+
+.. warning:: **Do not turn on the battery before ensuring proper robot positioning!**
+
+After the robot is placed according to the requirements, start it up according to the following steps:
+
+    #. :guilabel:`Press the Go2 power` switch button briefly for 1 time, then press the power switch button for 2 seconds or more, then Go2 can be started up During the startup process, the Go2 head indicator light flashes in green.
+    #. Wait for 2 minutes, the head indicator light is in green permanently, and the body is parallel to the ground, then the robot is started up.
+
+See the :numref:`fig_go2_startup`.
+
+.. _fig_go2_startup:
+
+.. figure:: ../../../images/unitree_go2/go2_startup.png
+   :align: center
+   :scale: 70%
+   :alt: Go2 Start-up
+
+   Go2 Start-up
+
+
+Remote Control Turn On
+--------------------------
+
+To turning on the handheld remote control, Shortly press the power button once, then long press the power button for more than 2 seconds,
+and hear a `beep`, which means the remote control is turned on.
+
+.. To turning off the handheld remote control, Shortly press the power button once, then long press the power button for more than 2 seconds, and hear three `beeps`, which means the remote control is turned off.
+

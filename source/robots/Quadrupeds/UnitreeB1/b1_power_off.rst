@@ -35,9 +35,9 @@ Boxing
 
 .. warning:: Be careful to pinch your fingers when boxing the robot.
 
-:numref:`b1_boxing` shows the boxing of the robot.
+:numref:`fig_b1_boxing` shows the boxing of the robot.
 
-.. _b1_boxing:
+.. _fig_b1_boxing:
 
 .. figure:: ../../../images/unitree_b1/b1_boxing.jpg
    :align: center
