@@ -51,6 +51,8 @@ This document provides an overview of the robot's hardware, software, and operat
         go2_power_off
         go2_manual_control
         go2_charging
+        go2_bind_app
+        go2_ros
 
 
 ..        b1_manual_control
