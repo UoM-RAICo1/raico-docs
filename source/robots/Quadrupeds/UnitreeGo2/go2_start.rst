@@ -1,5 +1,6 @@
 .. _Go2 App: https://www.unitree.com/app/go2/
 
+.. _go2_startup:
 
 ============
 Go2 Start Up
