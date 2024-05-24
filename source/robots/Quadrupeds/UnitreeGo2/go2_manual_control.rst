@@ -11,6 +11,41 @@ Manual Control
 To control the :ref:`Unitree_go2` robot manually, first of all you ned to turn the robot and remote control on.
 To know how to turn the robot and remote control on, please refer to the :ref:`go2_startup` section.
 
+Remote Control Parts
+--------------------
+
+.. _figure_remote_control:
+.. figure:: ../../../images/unitree_go2/go2_remote_control.png
+   :width: 100%
+   :align: center
+   :alt: Go2 Remote Control
+
+   Go2 Remote Control
+
+
+:numref:`figure_remote_control` shows the parts of the remote control.
+The parts names as follows:
+
+    #. Right Rocker
+    #. Left Rocker
+    #. Key L1/L2
+    #. Key R1/R2
+    #. Type C Charging Interface
+    #. Data transmission Signal Light
+    #. Left Key
+    #. Power Connect Indicator
+    #. F1 Left Rocker Calibration Key
+    #. SELECT Key
+    #. Charging Status Indicator
+    #. Power Indicator Light
+    #. Power Button
+    #. Data Transmission Indicator Light
+    #. F3 Right Rocker Calibration Key
+    #. START Key
+    #. Right Key
+    #. Bluetooth Signal Indicator Light
+
+
 Remote Control Commands
 -----------------------
 
@@ -88,7 +123,7 @@ Remote Control Commands
     +----------------------------------------+------------------------------------------------+
     | X (Click)                              | Avoidance on (Default)                         |
     +----------------------------------------+------------------------------------------------+
-    | Y (Long Press for 3s                   | Avoidance off                                  |
+    | Y (Long Press for 3 second)            | Avoidance off                                  |
     +----------------------------------------+------------------------------------------------+
     | L2 (Click) + SELECT (Click)            | Searching Switch - Default off                 |
     +----------------------------------------+------------------------------------------------+
@@ -102,6 +137,13 @@ Remote Control Commands
     +----------------------------------------+------------------------------------------------+
     | Arrow keys Up/Down                     | Adjust body height                             |
     +----------------------------------------+------------------------------------------------+
+
+.. note::
+    The ``Athletic Mode`` can be run only via ``Go2 App``. The athletic actions are:
+        #. Moon Walk.
+        #. Side Step.
+        #. Cross Step.
+        #. Parallel Leg Running.
 
 .. note:: To have more information about the remote control, please read the documentation of the robot in Go2 App.
 
