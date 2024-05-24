@@ -14,7 +14,7 @@ To get more information regarding the battery and charging process read Go2 batt
 Battery
 -------
 
-The battery pack details shown in :numref:`go2_battery_pack`. Also, the charger part is shown in :numref:`go2_charger_part`.
+The battery pack details shown in :numref:`go2_battery_pack`.
 
 .. _go2_battery_pack:
 .. figure:: ../../../images/unitree_go2/go2_battery_pack.png
