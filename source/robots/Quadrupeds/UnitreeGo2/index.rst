@@ -48,10 +48,10 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         go2_start
-        go2_power_off
+        go2_bind_app
         go2_manual_control
         go2_charging
-        go2_bind_app
+        go2_power_off
         go2_ros
 
 

@@ -30,12 +30,15 @@ During the  binding process, keep your phone bluetooth on, close to the robot, a
 
     Go2 App Binding
 
+
 .. _fig_go2_wifi_binding:
 
 .. figure:: ../../../images/unitree_go2/go2_wifi_binding.png
     :align: center
     :scale: 25%
-    :alt: Go2 App Wifi Binding
+    :alt: Go2 App Binding
+
+    Go2 App Binding
 
 .. figure:: ../../../images/unitree_go2/go2_wifi_binding_2.png
     :align: center
