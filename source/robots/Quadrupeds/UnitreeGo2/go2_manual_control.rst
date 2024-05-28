@@ -17,7 +17,7 @@ App Control
 
 .. note:: There are different features available in the app control, which are not available in the remote control.
 
-.. note:: Visit the `Go2 App Control Demos`_ to know more about the app control f
+.. note:: Visit the `Go2 App Control Demos`_ to know more about the app control features.
 
 To control the :ref:`Unitree_go2` robot with the app, first of all you ned to turn the robot and app on.
 To bind the app with robot read the :ref:`go2_app_binding` section.
