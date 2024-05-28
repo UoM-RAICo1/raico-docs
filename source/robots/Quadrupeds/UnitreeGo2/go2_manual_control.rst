@@ -22,14 +22,6 @@ App Control
 To control the :ref:`Unitree_go2` robot with the app, first of all you ned to turn the robot and app on.
 To bind the app with robot read the :ref:`go2_app_binding` section.
 
-Video below shows how to connect the app to the robot.
-
-.. raw:: html
-
-    <vid>
-        <iframe width="680" height="350" src="https://www.youtube.com/embed/cgELpVAIx9c?si=oUfTSZ8S-uitFwqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <br>
-    </vid>
-    <br>
 
 App Control Demos
 ~~~~~~~~~~~~~~~~~
@@ -46,7 +38,6 @@ Video below shows the posture and movement of the robot controlled by the app.
     <br>
 
 To know more about the app control demos, please visit the `Go2 App Control Demos`_.
-
 
 Remote Control
 ---------------

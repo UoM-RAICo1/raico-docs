@@ -44,6 +44,15 @@ During the  binding process, keep your phone bluetooth on, close to the robot, a
 
     Go2 App Wifi Binding
 
+Video below shows how to connect the app to the robot.
+
+.. raw:: html
+
+    <vid>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/cgELpVAIx9c?si=oUfTSZ8S-uitFwqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <br>
+    </vid>
+    <br>
+
 
 
 
