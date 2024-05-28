@@ -1,4 +1,4 @@
-
+.. _Go2 App Control Demos: https://www.youtube.com/playlist?list=PLJaMZYYjldgOS7IEZODioMkb_fMWphRoJ
 
 
 .. _go2_remote_control:
@@ -7,8 +7,47 @@
 Manual Control
 ==============
 
+There are two ways to control the :ref:`Unitree_go2` robot manually:
 
-To control the :ref:`Unitree_go2` robot manually, first of all you ned to turn the robot and remote control on.
+    #. App Control
+    #. Remote Control
+
+App Control
+-----------
+
+To control the :ref:`Unitree_go2` robot with the app, first of all you ned to turn the robot and app on.
+To bind the app with robot read the :ref:`go2_app_binding` section.
+
+Video below shows how to connect the app to the robot.
+
+.. raw:: html
+
+    <vid>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/cgELpVAIx9c?si=oUfTSZ8S-uitFwqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <br>
+    </vid>
+    <br>
+
+App Control Demos
+~~~~~~~~~~~~~~~~~
+
+.. warning:: Before controlling the robot with the app, watch the tutorial videos in the app and also `Go2 App Control Demos`_.
+
+Video below shows the posture and movement of the robot controlled by the app.
+
+.. raw:: html
+
+    <vid>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/COp9HXf1d_o?si=FZFrPvihf9qpEJNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </vid>
+    </vid>
+    <br>
+
+To know more about the app control demos, please visit the `Go2 App Control Demos`_.
+
+
+Remote Control
+---------------
+
+To control the :ref:`Unitree_go2` robot with remote control, first of all you ned to turn the robot and remote control on.
 To know how to turn the robot and remote control on, please refer to the :ref:`go2_startup` section.
 
 Video below shows how to connect the remote control to the robot.
@@ -22,7 +61,7 @@ Video below shows how to connect the remote control to the robot.
 
 
 Remote Control Parts
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 .. _figure_remote_control:
 .. figure:: ../../../images/unitree_go2/go2_remote_control.png
@@ -57,7 +96,7 @@ The parts names as follows:
 
 
 Remote Control Commands
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. table:: Remote Control Commands
     :align: center
