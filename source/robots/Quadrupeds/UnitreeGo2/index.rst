@@ -55,8 +55,3 @@ This document provides an overview of the robot's hardware, software, and operat
         go2_ros
 
 
-..        b1_manual_control
-..        b1_power_off
-..        b1_ros
-
-
