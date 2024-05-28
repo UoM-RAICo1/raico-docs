@@ -11,6 +11,16 @@ Manual Control
 To control the :ref:`Unitree_go2` robot manually, first of all you ned to turn the robot and remote control on.
 To know how to turn the robot and remote control on, please refer to the :ref:`go2_startup` section.
 
+Video below shows how to connect the remote control to the robot.
+
+.. raw:: html
+
+    <vid>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/yyrR0eTFZHg?si=qyyfXf0Mfa9Iigtt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </vid>
+    <br>
+
+
 Remote Control Parts
 --------------------
 

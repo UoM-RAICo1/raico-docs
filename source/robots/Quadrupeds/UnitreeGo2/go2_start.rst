@@ -92,6 +92,17 @@ See the :numref:`fig_go2_startup`.
    Go2 Start-up
 
 
+To have a better understanding of turning on process, you can see the video below:
+
+.. raw:: html
+
+    <div>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/m6-n51A3dao?si=e7G3b5cyHxKGxhjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+
+
 Remote Control Turn On
 --------------------------
 
@@ -99,4 +110,6 @@ To turning on the handheld remote control, Shortly press the power button once, 
 and hear a `beep`, which means the remote control is turned on.
 
 .. To turning off the handheld remote control, Shortly press the power button once, then long press the power button for more than 2 seconds, and hear three `beeps`, which means the remote control is turned off.
+
+
 

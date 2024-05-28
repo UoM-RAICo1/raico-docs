@@ -15,6 +15,16 @@ To power off the robot, follow the steps below:
     #. After the robot enters the prone state, ``short press`` the power button then ``long press`` the power button for `2` seconds to switch off the robot.
 
 
+See video below from seconds `30` for more details.
+
+.. raw:: html
+
+    <div>
+        <iframe width="680" height="350" src="https://www.youtube.com/embed/m6-n51A3dao?si=e7G3b5cyHxKGxhjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+
 Battery Removal
 ---------------
 
