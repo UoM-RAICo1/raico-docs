@@ -37,17 +37,20 @@ Unitree H1
 +------------------+--------------------------------------+
 
 
-
-
 This document provides usage instructions for the Unitree H1 Humanoid robot.
-The h1 is a humanoid robot developed by Unitree Robotics.
-The robot is capable of walking, running, and performing various other tasks.
+The H1 robot features a distinct upper and lower body structure, each with multiple degrees of freedom.
+The robot's single arm includes four degrees of freedom: the body-shoulder joint, shoulder joint, upper arm joint, and elbow joint.
+Its single leg comprises five degrees of freedom: the hip joint, leg joint, hip joint, knee joint, and ankle joint.
+Additionally, the waist has one degree of freedom, referred to as the waist joint.
+Overall, the robot is equipped with 19 joint motors, providing it with 19 degrees of freedom, which allows for precise control
+of its movements and posture.
 
 This document provides an overview of the robot's hardware, software, and operation.
 
     .. toctree::
 
         h1_start
+
 ..        go2_bind_app
 ..        go2_manual_control
 ..        go2_charging
