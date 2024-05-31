@@ -116,11 +116,12 @@ To prepare the robot for startup, follow these steps:
 
 
 11. Lower the H1 with the protective frame until H1's feet touch the ground and the fuselage remains stable.
-12. Press :guilabel:`R2+X` again to activate Sport Mode, and H1 will start marching in place.
+12. Press (remote control) :guilabel:`R2+X` again to activate Sport Mode, and H1 will start marching in place.
 13. Press :guilabel:`START` to switch to standing mode, then lower the hook and remove the rope.
 
+.. note:: Under the current system version, once H1 is turned on, the built-in motion control program will automatically start, even if you do not operate the remote control. The program periodically sends instructions with a speed of ``0`` . However, if you use the SDK for underlying development in this state, it may cause instruction conflicts, causing H1 to jitter.
 
-
+.. note:: If the behavior after pressing ``L2+A`` does not match the instructional video, press ``L2+R2`` multiple times to ensure that it enters Develop mode.
 
 
 

@@ -50,12 +50,10 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         h1_start
-
-..        go2_bind_app
-..        go2_manual_control
-..        go2_charging
-..        go2_power_off
-..        go2_ros
+        h1_manual_control
+        h1_charging
+        h1_power_off
+        h1_ros
 
 
 
