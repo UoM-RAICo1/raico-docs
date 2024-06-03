@@ -6,6 +6,8 @@
 Remote Control
 ==============
 
+.. warning:: The robot's current walking mode does not include the function for climbing stairs. Please avoid having the robot climb stairs at will to prevent damage to the robot.
+
 
 To control the H1, you can use the following commands:
 
@@ -91,33 +93,86 @@ Mode Switch
 Key Description
 ---------------
 
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Mode                | Button            | Description                                                                                          |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| General             | L1 + A            | Enter damping mode                                                                                   |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | L2 + R2           | Enter Develop mode                                                                                   |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Damping mode        | R2 + X            | Enter preparation mode                                                                               |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Preparatory mode    | R2 + X            | Enter sports mode                                                                                    |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Sports mode         | Left joystick     | Translation speed  :math:`(v_x, v_y)`                                                                |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | Right joystick    | Yaw angular velocity :math:`(w_{yaw})`                                                               |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | Left cross key    | Speed command compensation                                                                           |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | A                 | Reduce the height of your feet                                                                       |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | B                 | Increase foot lift                                                                                   |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | START             | Switch between continuous walking mode/standing mode                                                 |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Develop mode        | L2 + A            | Perform position control and control the robot to perform diagnostic actions                         |
-+                     +-------------------+------------------------------------------------------------------------------------------------------+
-|                     | L2 + B            | Stop the diagnostic action and the robot enters the damping state                                    |
-+---------------------+-------------------+------------------------------------------------------------------------------------------------------+
++---------------------+-------------------+------------------------------------------------------------------------------+
+| Mode                | Button            | Description                                                                  |
++---------------------+-------------------+------------------------------------------------------------------------------+
+| General             | L1 + A            | Enter damping mode                                                           |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | L2 + R2           | Enter Develop mode                                                           |
++---------------------+-------------------+------------------------------------------------------------------------------+
+| Damping mode        | R2 + X            | Enter preparation mode                                                       |
++---------------------+-------------------+------------------------------------------------------------------------------+
+| Preparatory mode    | R2 + X            | Enter sports mode                                                            |
++---------------------+-------------------+------------------------------------------------------------------------------+
+| Sports mode         | Left joystick     | Translation speed  :math:`(v_x, v_y)`                                        |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | Right joystick    | Yaw angular velocity :math:`(w_{yaw})`                                       |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | Left cross key    | Speed command compensation                                                   |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | A                 | Reduce the height of your feet                                               |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | B                 | Increase foot lift                                                           |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | START             | Switch between continuous walking mode/standing mode                         |
++---------------------+-------------------+------------------------------------------------------------------------------+
+| Develop mode        | L2 + A            | Perform position control and control the robot to perform diagnostic actions |
++                     +-------------------+------------------------------------------------------------------------------+
+|                     | L2 + B            | Stop the diagnostic action and the robot enters the damping state            |
++---------------------+-------------------+------------------------------------------------------------------------------+
+
+
+Advance Motion
+---------------
+Beyond the basic sports modes, the H1 robot is capable of executing more sophisticated movements.
+To use these advanced action modes, follow these steps:
+
+    #. Activate the damping mode by pressing ``L1 + A``.
+    #. Press the ``mode selection key`` to enter the preparation state for the desired mode.
+    #. Press the ``mode selection key`` once more to transition into the control state of that mode.
+
+Follow the key logic for further operations within this mode. See :numref:`H1_advance_motion` for more details.
+
+.. _H1_advance_motion:
+
+.. figure:: ../../../images/unitree_h1/h1_advance_motion.png
+   :align: center
+   :scale: 30%
+   :alt: Unitree H1 advanced motion
+
+   Unitree H1 advanced motion
+
++---------------------+-------------------------------+----------------------------------------------------------------+
+| Mode                | Mode Selection Key            | Description                                                    |
++---------------------+-------------------------------+----------------------------------------------------------------+
+| Sport Mode          | R2 + X                        | The most commonly used walking action                          |
++---------------------+-------------------------------+----------------------------------------------------------------+
+| Dance Mode          | L2 + Y                        | Full body dynamic coordinated dance                            |
++---------------------+-------------------------------+----------------------------------------------------------------+
+
+
+Sports Mode
+~~~~~~~~~~~
+
+The sports mode is the most frequently used mode. To activate this mode:
+
+    #. Press ``R2 + X`` to enter the ready state,
+    #. Then press ``R2 + X`` **again** to switch to sports mode.
+
+.. note:: ``R2 + X`` is the mode selection button for sports mode.
+
+
+Dance Mode
+~~~~~~~~~~~
+
+The dance mode is a full-body dynamic coordinated dance. To activate this mode:
+
+    #. Put the robot in a suspended state, and use ``L1 + A`` to enter damping mode.
+    #. Press ``L2 + Y`` to enter the ready state.
+    #. Then slowly lower the robot and press ``L2 + Y`` **again** to switch to dance mode. The robot will enter the standing state. At this time, you can relax or untie the protective rope.
+    #. Press ``START``, and the robot will start a whole-body dynamic and coordinated dance, and enter a standing state after the movement is completed.
+
+.. note:: After each dance, you can press ``START`` again to repeat the action.
 
 
 
