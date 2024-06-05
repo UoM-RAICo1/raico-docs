@@ -8,6 +8,45 @@ Remote Control
 
 .. warning:: The robot's current walking mode does not include the function for climbing stairs. Please avoid having the robot climb stairs at will to prevent damage to the robot.
 
+Remote Control Parts
+--------------------
+
+The remote controller’s various buttons are explained as shown in the diagram.
+The functionality of the remote controller mainly consists of left and right joysticks and function buttons.
+
+.. _figure_h1_remote_control:
+.. figure:: ../../../images/unitree_go2/go2_remote_control.png
+   :width: 100%
+   :align: center
+   :alt: H1 Remote Control
+
+   H1 Remote Control
+
+
+:numref:`figure_h1_remote_control` shows the parts of the remote control.
+The parts names as follows:
+
+    #. Right Rocker
+    #. Left Rocker
+    #. Key L1/L2
+    #. Key R1/R2
+    #. Type C Charging Interface
+    #. Data transmission Signal Light
+    #. Left Key
+    #. Power Connect Indicator
+    #. F1 Left Rocker Calibration Key
+    #. SELECT Key
+    #. Charging Status Indicator
+    #. Power Indicator Light
+    #. Power Button
+    #. Data Transmission Indicator Light
+    #. F3 Right Rocker Calibration Key
+    #. START Key
+    #. Right Key
+    #. Bluetooth Signal Indicator Light
+
+Remote Control Operation
+------------------------
 
 To control the H1, you can use the following commands:
 

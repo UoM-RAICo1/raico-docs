@@ -51,7 +51,6 @@ This document provides an overview of the robot's hardware, software, and operat
 
         h1_start
         h1_manual_control
-        h1_charging
         h1_power_off
         h1_ros
 
