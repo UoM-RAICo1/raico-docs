@@ -47,9 +47,10 @@ control algorithms. To achieve the above control relies on the use of the roboti
 
 This document provides an overview of the robot's hardware, software, and operation.
 
-..    .. toctree::
+    .. toctree::
 
-..        h1_start
+        z1_start
+
 ..        h1_manual_control
 ..        h1_power_off
 ..        h1_ros
