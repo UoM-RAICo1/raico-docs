@@ -50,8 +50,8 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         z1_start
+        z1_remote_control
 
-..        h1_manual_control
 ..        h1_power_off
 ..        h1_ros
 
