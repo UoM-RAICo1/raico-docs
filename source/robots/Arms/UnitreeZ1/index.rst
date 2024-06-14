@@ -51,6 +51,7 @@ This document provides an overview of the robot's hardware, software, and operat
 
         z1_start
         z1_remote_control
+        z1_ros
 
 ..        h1_power_off
 ..        h1_ros
