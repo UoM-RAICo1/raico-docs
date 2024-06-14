@@ -3,7 +3,7 @@
 .. _z1_ros:
 
 =============
-SDK Operation
+ROS Operation
 =============
 
 ROS Simulation
