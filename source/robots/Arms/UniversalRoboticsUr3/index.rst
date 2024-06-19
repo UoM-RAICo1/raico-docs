@@ -6,7 +6,7 @@
 .. _UR Video Tutorials: https://academy.universal-robots.com/video-tutorials/
 
 
-.. _UR3:
+.. _ur3e:
 
 =======================
 Universal Robotics UR3e
@@ -51,7 +51,7 @@ This document provides an overview of the robot's hardware, software, and operat
 
     .. toctree::
 
-        ur3e_start
+        ur3e_safety
 
 ..        z1_remote_control
 ..        z1_ros
