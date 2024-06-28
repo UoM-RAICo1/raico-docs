@@ -52,6 +52,7 @@ This document provides an overview of the robot's hardware, software, and operat
     .. toctree::
 
         ur3e_safety
+        ur3e_start
 
 ..        z1_remote_control
 ..        z1_ros
