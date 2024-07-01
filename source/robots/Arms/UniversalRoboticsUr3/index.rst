@@ -53,6 +53,7 @@ This document provides an overview of the robot's hardware, software, and operat
 
         ur3e_safety
         ur3e_start
+        ur3e_polyscope
 
 ..        z1_remote_control
 ..        z1_ros
